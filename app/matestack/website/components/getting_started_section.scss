@@ -1,0 +1,18 @@
+.getting-started-section{
+  background-color: $matestack-ligh-grey;
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+
+  .detail {
+    float: left;
+    margin-right: 20px;
+    a {
+      color: unset;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.btn {
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 28px;
+    text-align: center;
+    display: inline-block;
+    padding: 14px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    &.small-padding{
+      padding: 10px;
+    }
+ }
+
+
+.btn-primary {
+    border-radius: 3px;
+    border: 2px solid $matestack-red;
+    background-color: $matestack-red;
+    color: white;
+
+    &:hover, &:focus, &:active &.active {
+      color: white;
+      background-color: $matestack-dark-red!important;
+      border: 2px solid $matestack-dark-red!important;
+      box-shadow: none!important;
+      outline: none;
+    }
+}
+
+.btn-secondary {
+    border-radius: 3px;
+    border: 2px solid $matestack-red;
+    background-color: white;
+    color: $matestack-red;
+
+    &:hover, &:focus, &:active &.active {
+      color: $matestack-dark-red!important;
+      background-color: white!important;
+      border: 2px solid $matestack-dark-red!important;
+      box-shadow: none!important;
+      outline: none;
+    }
+}

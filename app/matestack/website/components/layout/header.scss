@@ -1,0 +1,29 @@
+
+nav{
+  background: white;
+  padding: 16px;
+  align-items: center;
+  &.show-header-shadow{
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+  }
+}
+.navbar-brand {
+  padding-top: 5px;
+  padding-left: 0px;
+}
+.navbar-brand img {
+  max-width: 200px;
+  height: auto;
+  margin-left: 0px;
+}
+.nav-item {
+  margin-left: 17px;
+}
+.navbar-toggle {
+  box-sizing: border-box;
+  color: #1B1D35;
+}
+
+font .navbar-nav li a:hover {
+  color: #000;
+}

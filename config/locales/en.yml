@@ -30,4 +30,117 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  header:
+    logo_alt_text: "matestack"
+    nav:
+      support: "Support us"
+      book: "Book us"
+  footer:
+    copyright_notice: "© 2020 Matestack GmbH"
+    imprint_link_text: "Imprint"
+    privacy_policy_link_text: "Privacy policy"
+  landing_page:
+    hero:
+      title: "Escape the frontend hustle & easily create interactive web apps in pure Ruby."
+      text_1: "Matestack is a collection of open source gems made for Ruby on Rails developers. By using matestack, you are able to craft interactive web UIs in pure Ruby with minimum effort. UI code becomes a native and fun part of your Rails app."
+      text_2: "Work with pure Ruby. If neccessary, extend with pure JavaScript. No Opal involved."
+    sub_hero:
+      title: "Boost your productivity"
+      text: "Matestack enables you to define sophisticated UI behavior without touching Javascript and HTML. You end up writing 50% less code while increasing productivity, maintainability and developer happiness."
+    features:
+      progressive:
+        icon: "matestack-code.png"
+        title: "Progressive integration"
+        text: "Easily integrate matestack into existing Rails projects. Switch to the fullstack Ruby experience step by step."
+      components:
+        icon: "matestack-ruby.png"
+        title: "Plugable UI components"
+        text: "Enjoy saving tons of time by using matestack's growing library of UI components written in pure Ruby."
+      extensible:
+        icon: "matestack-branches.png"
+        title: "Highly extensible"
+        text: "Creating custom UI components is as easy as writing Ruby classes or pure Vue.js components"
+    support:
+      icon: "matestack-maintenance.png"
+      title: "Sustainable open source"
+      text: "Matestack's core libraries are free and open source - and sustainable open source development requires proper funding. We therefore offer addons, tools, advanced documentation and premium support in order to being enable to allow a growing team to work on matestack fulltime."
+      sponsoring_tiers:
+        title: "GitHub sponsoring tiers:"
+        tiers:
+          supporter:
+            title: "Supporter"
+            description: "You simply want to support the project and expect nothing in return. Thank you, mate!"
+            included_items: []
+            price_per_month: "9 $/month"
+          solo_dev:
+            title: "Solo developer"
+            description: "You use matetsack as a solo developer and profit from the project. With this plan you get:"
+            included_items:
+              - "Access to a private Slack channel"
+              - "Access to advanced in-depth guides (coming soon)"
+              - "Access to addon gems like material/bootstrap UI components (coming soon)"
+            price_per_month: "19 $/month"
+          startup:
+            title: "Startup"
+            description: "You use matetsack in your startup in a team of 1-10 developers and profit from the project. With this plan you get:"
+            included_items:
+              - "Everything from \"Solo developer\""
+              - "Priorotized Github issue processing"
+              - "Small logo on GitHub project page & this website"
+            price_per_month: "99 $/month"
+          business:
+            title: "Business"
+            description: "You use matetsack in your business in a team of 11-20 developers and profit from the project. With this plan you get:"
+            included_items:
+              - "Everything from \"Startup\""
+              - "Medium sized logo on GitHub project page & this website"
+              - "1 hour expert consulting per month"
+            price_per_month: "299 $/month"
+          enterprise:
+            title: "Enterprise"
+            description: "You use matetsack in your business in a team of 20+ developers and profit from the project. With this plan you get:"
+            included_items:
+              - "Everything from \"Startup\""
+              - "Large logo on GitHub project page & this website"
+              - "Logo & description text in the documentation"
+              - "2 hour expert consulting per month"
+            price_per_month: "499 $/month"
+    services:
+      icon: "matestack-support.png"
+      title: "Let's succeed together"
+      text: "We would love to help you succeed with our technology. We can help you in various ways."
+      book_cta_text: "Book now"
+      service_types:
+        title: "Our services:"
+        types:
+          workshop:
+            title: "Workshop"
+            description: "You'd like to start using matestack in your business, but need help to get things going and bring your team up to speed? We're there for you!"
+          support:
+            title: "Support on demand"
+            description: "You're already using matestack but need support on specific issues? Just book our experts to help you out efficiently!"
+          development:
+            title: "Development on demand"
+            description: "You want us to join your development team for some time? Great Idea! We are happy to work on your projects and onboard your team concurrently!"
+          refactoring:
+            title: "Refactoring"
+            description: "You need us to refactor some bulky legacy views and turn them into future proof, maintainable Ruby code? We love this challenge!"
+          turnkey:
+            title: "Turnykey applications"
+            description: "Concept and fundig are there, and you \"only\" need developers/a development team to build the applications? Our Ruby experts are more than happy to do so! Both handover and ongoing support possible."
+    team:
+      title: "A team full of mates"
+      core_contributors: "+27 core contributors"
+      join_team_cta: "Join the team!"
+    getting_started:
+      title: "Jump right in!"
+      request_help_cta: "Request help"
+      getting_started_cta: "Getting started"
+      github_stars: "220"
+      github_stars_text: "Github Stars"
+      version: "1.0.0-rc1"
+      version_text: "Version"
+      licencse: "MIT"
+      licencse_text: "License"
+    newsletter:
+      title: "Receive regular updates through our newsletter!"
