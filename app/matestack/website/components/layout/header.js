@@ -23,8 +23,6 @@ MatestackUiCore.Vue.component('website-layout-header', {
       }, 150)
     }
   },
-  mounted() {
-  },
   created() {
     window.addEventListener('scroll', this.handleScroll);
   },

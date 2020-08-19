@@ -1,0 +1,94 @@
+.example-slide {
+
+  .example-container{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .code-preview-container{
+    // border-radius: 4px;
+    // box-shadow: 0 0.3rem 0.3rem rgba(0,0,0,0.15);
+    margin-bottom: 25px;
+    overflow: hidden;
+  }
+
+  .code-wrapper{
+    background-color: #151515;
+    overflow: auto;
+    height: 500px;
+
+
+    p {
+      code {
+        color: grey;
+      }
+      &:first-of-type{
+        margin-bottom: -18px;
+      }
+      margin-bottom: 0px;
+    }
+
+    .markdown-content{
+
+      font-size: 12px;
+
+      .highlight{
+        padding: 0!important;
+        height: 100%;
+      }
+    }
+
+  }
+
+  form {
+    input.error{
+      border: 1px solid red;
+    }
+
+    .errors {
+      display: block;
+      color: red;
+      font-size: 12px;
+      margin-bottom: -40px;
+    }
+  }
+
+  .success-message{
+    font-size: 12px;
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    width: 100%;
+    margin-left: -15px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  .failure-message{
+    font-size: 12px;
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    width: 100%;
+    margin-left: -15px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .preview-wrapper{
+    min-height: 350px;
+  }
+
+  .description-wrapper{
+    min-height: 200px;
+    @include media-breakpoint-down(sm) {
+      min-height: 350px;
+    }
+  }
+
+
+}

@@ -1,4 +1,4 @@
-class Website::Components::TeamSection < Matestack::Ui::StaticComponent
+class Website::Components::TeamSection < Matestack::Ui::Component
 
   def response
     section class: "team-section mt-3 pb-5" do
@@ -17,9 +17,31 @@ class Website::Components::TeamSection < Matestack::Ui::StaticComponent
   end
 
   def team_slider
-    div class: 'row' do
-      div class: 'offset-md-3 col-sm-6 pt-5 text-center' do
-        plain "TODO: team slider"
+    div class: 'row justify-content-center' do
+      div class: 'col-12 col-md-8 pt-5 text-center' do
+        slick_slider do
+          t("landing_page.team.members").each do |key, infos|
+            member_slide infos
+          end
+        end
+      end
+    end
+  end
+
+  def member_slide infos
+    div class: "slider-item team-slider" do
+      div class: "row justify-content-center" do
+        div class: "col-lg-6" do
+          img path: asset_pack_url("media/images/#{infos[:img_path]}"), class: "member-img rounded-circle mx-auto mb-3"
+        end
+        div class: "col-lg-6 text-center text-lg-left" do
+          heading size: 5, text: infos[:name]
+          small text: infos[:role]
+          br
+          small text: infos[:twitter_handle]
+          br times: 2
+          # small text: infos[:description]
+        end
       end
     end
   end

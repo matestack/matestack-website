@@ -1,0 +1,44 @@
+.newsletter-section{
+  background-color: $matestack-light-grey;
+  @include media-breakpoint-up(md) {
+    padding-top: 200px;
+  }
+
+  .bg-blue{
+    background-color: $matestack-dark-blue;
+  }
+
+  .form-wrapper{
+    @include media-breakpoint-up(md) {
+      margin-top: -200px;
+    }
+    min-height: 400px;
+  }
+
+  form {
+    label {
+      color: #606171;
+      font-family: "Nunito Sans", sans-serif;
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 28px;
+      margin-top: 10px;
+      margin-bottom: 0px;
+      text-transform: uppercase;
+    }
+
+    input {
+      height: 50px;
+      &.error{
+        border-color: #ee3923!important;
+      }
+    }
+
+    .error {
+      display: block;
+      color: #ee3923;
+    }
+
+  }
+
+}

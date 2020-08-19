@@ -4254,9 +4254,9 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-"matestack-ui-core@https://github.com/matestack/matestack-ui-core#redo-all-the-rendering-related-things":
+"matestack-ui-core@https://github.com/matestack/matestack-ui-core#next-release":
   version "1.0.0-rc1"
-  resolved "https://github.com/matestack/matestack-ui-core#86ab522edf82ff56069847b40d04b44cfb83784b"
+  resolved "https://github.com/matestack/matestack-ui-core#93651a7bef1da6d89b487ed838184f85c918854c"
   dependencies:
     axios "^0.18.1"
     link-module-alias "^1.2.0"
@@ -6453,6 +6453,11 @@ simple-swizzle@^0.2.2:
   integrity sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=
   dependencies:
     is-arrayish "^0.3.1"
+
+slick-carousel@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/slick-carousel/-/slick-carousel-1.8.1.tgz#a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
+  integrity sha512-XB9Ftrf2EEKfzoQXt3Nitrt/IPbT+f1fgqBdoxO3W/+JYvtEOW6EgxnWfr9GH6nmULv7Y2tPmEX3koxThVmebA==
 
 snapdragon-node@^2.0.1:
   version "2.1.1"

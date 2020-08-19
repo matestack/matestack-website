@@ -1,0 +1,13 @@
+.team-section{
+
+  .member-img{
+    height: 150px;
+  }
+
+  .slick-slide {
+     height:250px;
+     @include media-breakpoint-down(md) {
+       height: auto;
+     }
+  }
+}

@@ -30,10 +30,14 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 # For UI development in pure Ruby
 # 1.0.0 pre release branch
-gem 'matestack-ui-core', git: 'https://github.com/matestack/matestack-ui-core.git', branch: 'redo-all-the-rendering-related-things'
+gem 'matestack-ui-core', git: 'https://github.com/matestack/matestack-ui-core.git', branch: 'next-release'
 
-gem 'reform', '~> 2.3.1'
-gem 'reform-rails', '~> 0.2.0.rc2'
+# for markdown usage
+gem 'redcarpet'
+# for syntax highlighting
+gem 'rouge'
+# for some page view analytics
+gem 'ahoy_matey'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

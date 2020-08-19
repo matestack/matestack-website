@@ -1,13 +1,8 @@
 .getting-started-section{
-  background-color: $matestack-ligh-grey;
-  width: 100vw;
-  position: relative;
-  margin-left: -50vw;
-  left: 50%;
+  background-color: $matestack-light-grey;
 
   .detail {
     float: left;
-    margin-right: 20px;
     a {
       color: unset;
       &:hover{

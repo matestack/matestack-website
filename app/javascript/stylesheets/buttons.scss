@@ -29,6 +29,13 @@
       box-shadow: none!important;
       outline: none;
     }
+    &:disabled{
+      color: white;
+      background-color: $matestack-dark-red!important;
+      border: 2px solid $matestack-dark-red!important;
+      box-shadow: none!important;
+      outline: none;
+    }
 }
 
 .btn-secondary {

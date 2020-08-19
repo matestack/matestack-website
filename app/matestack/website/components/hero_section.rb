@@ -1,4 +1,4 @@
-class Website::Components::HeroSection < Matestack::Ui::StaticComponent
+class Website::Components::HeroSection < Matestack::Ui::Component
 
   def response
     section class: "hero-section" do

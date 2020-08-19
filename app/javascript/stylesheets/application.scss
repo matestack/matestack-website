@@ -3,10 +3,19 @@
 @import 'fonts';
 @import 'buttons';
 
+
 @import '../../matestack/website/app';
 @import '../../matestack/website/components/layout/header';
+@import '../../matestack/website/components/layout/footer';
 @import '../../matestack/website/components/hero_section';
+@import '../../matestack/website/components/examples_section';
+@import '../../matestack/website/components/example_slides/base';
+@import '../../matestack/website/components/example_slides/slide_2';
 @import '../../matestack/website/components/features_section';
 @import '../../matestack/website/components/support_section';
+@import '../../matestack/website/components/addons_section';
+@import '../../matestack/website/components/indepth_guides_section';
 @import '../../matestack/website/components/services_section';
+@import '../../matestack/website/components/team_section';
 @import '../../matestack/website/components/getting_started_section';
+@import '../../matestack/website/components/newsletter_section';

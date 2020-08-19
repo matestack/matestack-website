@@ -1,8 +1,6 @@
-class Website::Components::Layout::Header < Matestack::Ui::DynamicComponent
+class Website::Components::Layout::Header < Matestack::Ui::VueJsComponent
 
-  def vuejs_component_name
-    "website-layout-header"
-  end
+  vue_js_component_name "website-layout-header"
 
   def response
     header do
@@ -39,17 +37,17 @@ class Website::Components::Layout::Header < Matestack::Ui::DynamicComponent
     div class:'collapse navbar-collapse', id:'nav-items' do
       ul class:'navbar-nav ml-auto align-items-center' do
 
-        li class: 'nav-item' do
+        li class: 'nav-item my-3 my-md-0' do
           link class: 'btn btn-secondary small-padding', path: :root_path,
           params: { anchor: :support },
           attributes: { "@click.prevent": "scrollTo(\"support\")" } do
             plain t('header.nav.support')
           end
         end
-        li class: 'nav-item' do
+        li class: 'nav-item my-3 my-md-0' do
           link class: 'btn btn-primary small-padding', path: :root_path,
           params: { anchor: :services },
-          attributes: { "@click.prevent": "scrollTo(\"support\")" } do
+          attributes: { "@click.prevent": "scrollTo(\"services\")" } do
             plain t('header.nav.book')
           end
         end

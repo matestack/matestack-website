@@ -39,14 +39,39 @@ en:
     copyright_notice: "© 2020 Matestack GmbH"
     imprint_link_text: "Imprint"
     privacy_policy_link_text: "Privacy policy"
+  example_slides:
+    slide_1:
+      heading: "Define your UI in Ruby classes"
+      text_1: "Create Ruby classes within your Rails project and use methods like \"div\" to define your user interface."
+      text_2: "The \"div\" method calls one of the static core components, responsible for rendering HTML tags."
+    slide_2:
+      heading: "Use partials for a clean structure"
+      text_1: "Simple Ruby methods help you creating well structured UI code."
+    slide_3:
+      heading: "Create your own components"
+      text_1: "Instead of using partials, you can move parts of your UI code to custom component classes. These can then be reused across different parts of your application and make for very DRY code."
+    slide_4:
+      heading: "Call controller actions without JavaScript"
+      text_1: "Core components offer basic dynamic behaviour and let you easily call controller actions and react to server responses on the client side without full page reload."
+    slide_5:
+      heading: "Dynamically handle form input without JavaScript"
+      text_1: "Create dynamic forms for ActiveRecord Models (or plain objects) and display server side responses, like validation errors or success messages, without relying on a full page reload."
+    slide_6:
+      heading: "Define asynchronous, event-based UI rerendering in pure Ruby"
+      text_1: "Using matestack's built-in event system, you can rerender parts of the UI on client side events, such as form or action submissions."
+      text_2: "This also works for server side events broadcasted via ActionCable!"
+    slide_7:
+      heading: "Easily extend with Vue.js"
+      text_1: "Matestack's dynamic parts are built on Vue.js. If you want to implement custom dynamic behaviour, you can simply create your own Vue components and use them along matestacks core components."
+      text_2: "It's even possible to interact with matestack's core components using the built-in event bus."
   landing_page:
     hero:
       title: "Escape the frontend hustle & easily create interactive web apps in pure Ruby."
-      text_1: "Matestack is a collection of open source gems made for Ruby on Rails developers. By using matestack, you are able to craft interactive web UIs in pure Ruby with minimum effort. UI code becomes a native and fun part of your Rails app."
-      text_2: "Work with pure Ruby. If neccessary, extend with pure JavaScript. No Opal involved."
+      text_1: "Matestack provides a collection of open source gems made for Ruby on Rails developers. Matestack enables you to craft interactive web UIs without JavaScript in pure Ruby with minimum effort. UI code becomes a native and fun part of your Rails app."
+      text_2: "Work with pure Ruby. If necessary, extend with pure JavaScript. No Opal involved."
     sub_hero:
       title: "Boost your productivity"
-      text: "Matestack enables you to define sophisticated UI behavior without touching Javascript and HTML. You end up writing 50% less code while increasing productivity, maintainability and developer happiness."
+      text: "Matestack enables you to define sophisticated UI behavior without touching JavaScript and HTML. You end up writing 50% less code while increasing productivity, maintainability and developer happiness."
     features:
       progressive:
         icon: "matestack-code.png"
@@ -63,7 +88,7 @@ en:
     support:
       icon: "matestack-maintenance.png"
       title: "Sustainable open source"
-      text: "Matestack's core libraries are free and open source - and sustainable open source development requires proper funding. We therefore offer addons, tools, advanced documentation and premium support in order to being enable to allow a growing team to work on matestack fulltime."
+      text: "Matestack's core libraries are free and open source - and sustainable open source development requires proper funding. We therefore offer addons, tools, advanced documentation and premium support in order to allow a growing team to work on matestack fulltime."
       sponsoring_tiers:
         title: "GitHub sponsoring tiers:"
         tiers:
@@ -77,8 +102,8 @@ en:
             description: "You use matetsack as a solo developer and profit from the project. With this plan you get:"
             included_items:
               - "Access to a private Slack channel"
-              - "Access to advanced in-depth guides (coming soon)"
-              - "Access to addon gems like material/bootstrap UI components (coming soon)"
+              - "Access to advanced in-depth guides (coming fall 2020)"
+              - "Access to addon gems like material/bootstrap UI components (coming fall 2020)"
             price_per_month: "19 $/month"
           startup:
             title: "Startup"
@@ -105,6 +130,16 @@ en:
               - "Logo & description text in the documentation"
               - "2 hour expert consulting per month"
             price_per_month: "499 $/month"
+    addons:
+      title: "Add-ons for sponsors"
+      text_1: "In addition to our open source projects, we provide our sponsors with various add-ons in order to further increase their productivity."
+      text_2: "Currently we work on a bootstrap add-on, giving you the possibility to use bootstrap components without writing all the DOM structure and CSS classes. Just use some lines of pure Ruby to get all what bootstrap has to offer. With this addon, you are able to create beautiful web apps even faster!"
+      cta_text: "Coming fall 2020"
+    indepth_guides:
+      title: "Extendend know how for sponsors"
+      text_1: "On top of our comprehensive and growing documentation, we will offer our sponsors written guides about advanced topics."
+      text_2: "Currently we work on guides covering topics such as: 'handling multilanguage apps', 'creating mutlistep forms' and more!"
+      cta_text: "Coming fall 2020"
     services:
       icon: "matestack-support.png"
       title: "Let's succeed together"
@@ -132,15 +167,45 @@ en:
       title: "A team full of mates"
       core_contributors: "+27 core contributors"
       join_team_cta: "Join the team!"
+      members:
+        jonas:
+          img_path: "team/jonas.png"
+          name: "Jonas Jabari"
+          twitter_handle: "@jonasjabari"
+          role: "Senior Ruby developer, creator and CEO of matestack"
+          description: "\"While being a solo developer, I often struggled with the growing complexity of web development. I created matestack to get things done easier, faster and more sustainable. After some time, I decided to publish my work and now look forward to grow this project through open source!\""
+        nils:
+          name: "Nils Henning"
+          img_path: "team/nils.png"
+          role: "Senior Ruby developer, matestack core development"
+          description: "tbd"
+        anh:
+          name: "Anh Nguyen"
+          img_path: "team/anh.png"
+          role: "Ruby developer, matestack application development"
+          description: "tbd"
+        pascal:
+          name: "Pascal Wengerter"
+          img_path: "team/pascal.png"
+          role: "Ruby developer, matestack application development"
+          description: "tbd"
     getting_started:
       title: "Jump right in!"
       request_help_cta: "Request help"
       getting_started_cta: "Getting started"
-      github_stars: "220"
+      github_stars: "200+"
       github_stars_text: "Github Stars"
-      version: "1.0.0-rc1"
+      version: "1.0.0"
       version_text: "Version"
-      licencse: "MIT"
+      licencse: "LGPLv3"
       licencse_text: "License"
     newsletter:
-      title: "Receive regular updates through our newsletter!"
+      title: "Sign up to our newsletter"
+      description: "We ocasionally will send you news about updates on our technology, new content and related informations. Your data will only be stored on our servers without any thirdparty service involved!"
+      form:
+        title: "Want to keep updated?"
+        name_label: "Name"
+        email_label: "Email"
+        submit_text: "submit"
+        success_heading: "Subscription requested!"
+        success_description: "Please confirm your subscription using the link given in the email we just sent you."

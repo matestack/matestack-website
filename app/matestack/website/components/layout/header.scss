@@ -23,6 +23,11 @@ nav{
   box-sizing: border-box;
   color: #1B1D35;
 }
+.navbar-toggler {
+  &:focus{
+    outline: none;
+  }
+}
 
 font .navbar-nav li a:hover {
   color: #000;

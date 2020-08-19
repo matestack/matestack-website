@@ -1,4 +1,4 @@
-class Website::Components::FeaturesSection < Matestack::Ui::StaticComponent
+class Website::Components::FeaturesSection < Matestack::Ui::Component
 
   def prepare
     @feature_keys = ["progressive", "components", "extensible"]

@@ -8,24 +8,17 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
-import 'jquery'
+import $ from 'jquery';
 import 'popper.js'
 import 'bootstrap'
 
 import MatestackUiCore from 'matestack-ui-core'
 
-
 import 'stylesheets/application'
 
-
-
+import '../../matestack/components/slick/slider.js'
 import '../../matestack/website/components/layout/header.js'
+import '../../matestack/website/components/example_slides/my_vue_js_component.js'
 
-
-
-// Uncomment to copy all static images under ../images to the output folder and reference
-// them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
-// or the `imagePath` JavaScript helper below.
-//
 const images = require.context('../images', true)
 const imagePath = (name) => images(name, true)
