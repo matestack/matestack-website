@@ -30,7 +30,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 # For UI development in pure Ruby
 # 1.0.0 pre release branch
-gem 'matestack-ui-core', git: 'https://github.com/matestack/matestack-ui-core.git', branch: 'next-release'
+gem 'matestack-ui-core', '>= 1.0.0.rc.1'
 
 # for markdown usage
 gem 'redcarpet'
