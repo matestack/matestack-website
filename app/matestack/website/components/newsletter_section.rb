@@ -33,7 +33,12 @@ class Website::Components::NewsletterSection < Matestack::Ui::Component
           form_input class: 'form-control bg-light', id: 'form-email', key: :email, type: :email, label: t("landing_page.newsletter.form.email_label")
           br
           form_submit  do
-            button class: 'btn btn-primary', id: 'submit-btn', text:  t("landing_page.newsletter.form.submit_text")
+            toggle show_on: "form_submitted", hide_on: "form_succeeded, form_failed" do
+              button class: 'btn btn-primary', id: 'submit-btn', text:  "submitting...", disabled: true
+            end
+            toggle init_show: true, show_on: "form_succeeded, form_failed", hide_on: "form_submitted" do
+              button class: 'btn btn-primary', id: 'submit-btn', text:  t("landing_page.newsletter.form.submit_text")
+            end
           end
         end
       end
@@ -51,11 +56,12 @@ class Website::Components::NewsletterSection < Matestack::Ui::Component
       for: :newsletter,
       method: :post,
       path: :newsletter_signup_path,
+      emit: "form_submitted",
       success: {
         emit: "form_succeeded"
       },
       failure: {
-        emit: "form_has_errors"
+        emit: "form_failed"
       }
     }
   end
