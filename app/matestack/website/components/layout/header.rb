@@ -16,8 +16,7 @@ class Website::Components::Layout::Header < Matestack::Ui::VueJsComponent
   end
 
   def logo
-    link class:'navbar-brand', path: :root_path do
-      # plain image_pack_tag('matestack_logo_orange.png')
+    transition class:'navbar-brand', path: :root_path do
       img alt: t('header.logo_alt_text'),
         path: asset_pack_url('media/images/matestack-logo-red.png')
     end
