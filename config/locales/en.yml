@@ -195,7 +195,7 @@ en:
       getting_started_cta: "Getting started"
       github_stars: "200+"
       github_stars_text: "Github Stars"
-      version: "1.0.0"
+      version: "1.0.0.rc.1"
       version_text: "Version"
       licencse: "LGPLv3"
       licencse_text: "License"
