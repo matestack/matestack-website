@@ -99,7 +99,7 @@ en:
             price_per_month: "9 $/month"
           solo_dev:
             title: "Solo developer"
-            description: "You use matetsack as a solo developer and profit from the project. With this plan you get:"
+            description: "You use matetsack as a solo developer and want even more sugar. With this tier you get:"
             included_items:
               - "Access to a private Slack channel"
               - "Access to advanced in-depth guides (coming fall 2020)"
@@ -107,7 +107,7 @@ en:
             price_per_month: "19 $/month"
           startup:
             title: "Startup"
-            description: "You use matetsack in your startup in a team of 1-10 developers and profit from the project. With this plan you get:"
+            description: "You use matetsack in your startup in a team of 1-10 developers and want to boost your performance even more. With this tier you get:"
             included_items:
               - "Everything from \"Solo developer\""
               - "Priorotized Github issue processing"
@@ -115,15 +115,15 @@ en:
             price_per_month: "99 $/month"
           business:
             title: "Business"
-            description: "You use matetsack in your business in a team of 11-20 developers and profit from the project. With this plan you get:"
+            description: "You use matetsack in your business in a team of 11-20 developers and can imagine how matestack's add-ons and extendend guides would provide greate value to your team. With this tear you get:"
             included_items:
               - "Everything from \"Startup\""
               - "Medium sized logo on GitHub project page & this website"
               - "1 hour expert consulting per month"
             price_per_month: "299 $/month"
           enterprise:
-            title: "Enterprise"
-            description: "You use matetsack in your business in a team of 20+ developers and profit from the project. With this plan you get:"
+            title: "Big Business"
+            description: "You use matetsack in your business in a team of 20+ developers and know what a 50% decrease of UI development effort means to your budgets. With this plan you get:"
             included_items:
               - "Everything from \"Startup\""
               - "Large logo on GitHub project page & this website"
@@ -195,13 +195,13 @@ en:
       getting_started_cta: "Getting started"
       github_stars: "200+"
       github_stars_text: "Github Stars"
-      version: "1.0.0.rc.1"
+      version: "1.0.0"
       version_text: "Version"
       licencse: "LGPLv3"
       licencse_text: "License"
     newsletter:
       title: "Sign up to our newsletter"
-      description: "We ocasionally will send you news about updates on our technology, new content and related informations. Your data will only be stored on our servers without any thirdparty service involved!"
+      description: "We occasionally will send you news about updates on our technology, new content and related informations. Your data will only be stored on our servers without any thirdparty service involved!"
       form:
         title: "Want to keep updated?"
         name_label: "Name"

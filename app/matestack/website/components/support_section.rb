@@ -47,7 +47,7 @@ class Website::Components::SupportSection < Matestack::Ui::Component
             li text: item
           end
         end
-        link path: "https://github.com/matestack", class: "text-left text-lg-center" do
+        link path: "https://github.com/sponsors/matestack", class: "text-left text-lg-center" do
           button class: "btn btn-secondary small-padding", text: tier_attributes[:price_per_month]
         end
       end
