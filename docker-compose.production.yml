@@ -18,7 +18,6 @@ services:
       - "3000:3000"
     links:
       - postgres
-      - redis
     environment:
       RAILS_ENV: "production"
       POSTGRES_DB: "production"
@@ -29,16 +28,8 @@ services:
       MAILER_USER: $MAILER_USER
     env_file:
       - ./.env
-    volumes:
-      - storage-volume:/app/storage
-    command: "rails server --binding 0.0.0.0 --port 3000"
+    command: "bundle exec rails server --binding 0.0.0.0 --port 3000"
 
-  redis:
-    image: redis:5.0.7-alpine
-    volumes:
-      - redis-volume:/data
 
 volumes:
-  redis-volume:
   data-volume:
-  storage-volume:
