@@ -11,6 +11,8 @@ variables:
 release:
   stage: release
   script:
+    - chmod +x create_env.sh
+    - "sh ./create_env.sh"
     - docker build --pull -t $CONTAINER_RELEASE_IMAGE ./ -f ./Dockerfile.release
     - docker push $CONTAINER_RELEASE_IMAGE
   only:
