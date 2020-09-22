@@ -22,6 +22,11 @@ services:
     environment:
       RAILS_ENV: "production"
       POSTGRES_DB: "production"
+      RAILS_MASTER_KEY: $RAILS_MASTER_KEY
+      MAILER_ADDRESS: $MAILER_ADDRESS
+      MAILER_DOMAIN: $MAILER_DOMAIN
+      MAILER_PASSWORD: $MAILER_PASSWORD
+      MAILER_USER: $MAILER_USER
     env_file:
       - ./.env
     volumes:
