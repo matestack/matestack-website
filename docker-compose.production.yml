@@ -13,7 +13,7 @@ services:
       - ./.env
 
   rails:
-    image: registry.gitlab.com/basemate-ops/neworld:latest
+    image: registry.gitlab.com/matestack/matestack-website
     ports:
       - "3000:3000"
     links:
