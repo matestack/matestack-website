@@ -15,8 +15,14 @@ class Website::Components::FeaturesSection < Matestack::Ui::Component
             paragraph text: t("landing_page.features.#{feature_key}")[:text]
           end
         end
-
       end
+
+      div class: 'row mt-5 justify-content-center' do
+        div class: 'col col-md-6 pt-5 text-center' do
+          youtube height: "350px", width: "100%", youtube_id: '83AERu6pmg8', start_at: 0, privacy_mode: true
+        end
+      end
+      
     end
   end
 
