@@ -36,4 +36,6 @@ deploy-production:
     - docker-compose -f docker-compose.production.yml run --rm rails bundle exec rake db:migrate
     - docker-compose -f docker-compose.production.yml up -d rails
   tags:
-    - production-do-1 #specific runner on specific project machine
+    - production-do-de-1
+    - production-do-singapore-1
+    - production-do-us-1
