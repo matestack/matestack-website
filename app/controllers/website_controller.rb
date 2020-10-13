@@ -17,16 +17,23 @@ class WebsiteController < ApplicationController
   end
 
   def newsletter_signup
-    newsletter_subscriber = NewsletterSubscriber.create(newsletter_params)
+    errors = {}
 
-    if newsletter_subscriber.errors.any?
+    if (newsletter_params[:email] =~ URI::MailTo::EMAIL_REGEXP) != 0
+      errors[:email] = ["invalid mail"]
+    end
+
+    if errors.any?
       render json: {
-        errors: newsletter_subscriber.errors,
+        errors: errors,
         message: "Data was not saved, please check form!"
       }, status: 422
     else
-      NewsletterMailer.with(newsletter_subscriber: newsletter_subscriber).confirm_email.deliver_now
-      render json: { message: "Submitted successfully" }, status: 200
+      newsletter_subscriber = NewsletterSubscriber.create(newsletter_params)
+      unless newsletter_subscriber.errors.any?
+        NewsletterMailer.with(newsletter_subscriber: newsletter_subscriber).confirm_email.deliver_now
+        render json: { message: "Submitted successfully" }, status: 200
+      end
     end
   end
 
