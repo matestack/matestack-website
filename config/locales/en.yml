@@ -98,7 +98,7 @@ en:
             included_items: []
             price_per_month: "9 $/month"
           solo_dev:
-            title: "Solo developer"
+            title: "Solo Developer"
             description: "You use matestack as a solo developer and want even more sugar. With this tier you get:"
             included_items:
               - "Access to a private Slack channel"
@@ -109,7 +109,7 @@ en:
             title: "Startup"
             description: "You use matestack in your startup in a team of 1-10 developers and want to boost your performance even more. With this tier you get:"
             included_items:
-              - "Everything from \"Solo developer\""
+              - "Everything from \"Solo Developer\""
               - "Priorotized Github issue processing"
               - "Small logo on GitHub project page & this website"
             price_per_month: "99 $/month"
@@ -136,7 +136,7 @@ en:
       text_2: "Currently we work on a bootstrap add-on, giving you the possibility to use bootstrap components without writing all the DOM structure and CSS classes. Just use some lines of pure Ruby to get all what bootstrap has to offer. With this addon, you are able to create beautiful web apps even faster!"
       cta_text: "Coming fall 2020"
     indepth_guides:
-      title: "Extendend know how for sponsors"
+      title: "Extendend know-how for sponsors"
       text_1: "On top of our comprehensive and growing documentation, we will offer our sponsors written guides about advanced topics."
       text_2: "Currently we work on guides covering topics such as: 'handling multilanguage apps', 'creating mutlistep forms' and more!"
       cta_text: "Coming fall 2020"
@@ -161,7 +161,7 @@ en:
             title: "Refactoring"
             description: "You need us to refactor some bulky legacy views and turn them into future proof, maintainable Ruby code? We love this challenge!"
           turnkey:
-            title: "Turnykey applications"
+            title: "Turnkey applications"
             description: "Concept and fundig are there, and you \"only\" need developers/a development team to build the applications? Our Ruby experts are more than happy to do so! Both handover and ongoing support possible."
     team:
       title: "A team full of mates"
@@ -193,15 +193,15 @@ en:
       title: "Jump right in!"
       request_help_cta: "Request help"
       getting_started_cta: "Getting started"
-      github_stars: "200+"
+      github_stars: "230+"
       github_stars_text: "Github Stars"
-      version: "1.0.0"
+      version: "1.1.0"
       version_text: "Version"
       licencse: "LGPLv3"
       licencse_text: "License"
     newsletter:
       title: "Sign up to our newsletter"
-      description: "We occasionally will send you news about updates on our technology, new content and related informations. Your data will only be stored on our servers without any thirdparty service involved!"
+      description: "We occasionally will send you news about updates on our technology, new content and related information. Your data will only be stored on our servers without any thirdparty service involved!"
       form:
         title: "Want to keep updated?"
         name_label: "Name"
