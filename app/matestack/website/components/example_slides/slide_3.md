@@ -1,8 +1,22 @@
-`app/matestack/my_page.rb`
+`app/matestack/components/registry.rb`
 
 ```ruby
 
-class MyPage < Matestack::Ui::Page
+module Components::Registry
+
+  Matestack::Ui::Core::Component::Registry.register_components(
+    my_card_component: MyCardComponent,
+    #...
+  )
+
+end
+```
+
+`app/matestack/my_app/pages/some_page.rb`
+
+```ruby
+
+class MyApp::Pages::SomePage < Matestack::Ui::Page
   #...
   def response
     @items.each do |item|

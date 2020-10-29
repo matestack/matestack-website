@@ -1,8 +1,8 @@
-`app/matestack/my_page.rb`
+`app/matestack/my_app/pages/some_page.rb`
 
 ```ruby
 
-class MyPage < Matestack::Ui::Page
+class MyApp::Pages::SomePage < Matestack::Ui::Page
 
   def prepare
     @new_active_record_instance = MyActiveRecordModel.new
@@ -30,7 +30,7 @@ class MyPage < Matestack::Ui::Page
   def my_form_config
     {
       for: @new_active_record_instance,
-      path: :some_rails_route,
+      path: some_rails_route_path,
       method: :post,
       success: {
         emit: "submitted"

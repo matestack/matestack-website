@@ -1,0 +1,39 @@
+nav {
+  .btn-group{
+    .btn{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-color: $matestack-dark-blue;
+      color: $matestack-dark-blue;
+    }
+    a{
+      #top-nav-btn{
+        &:active, &:focus, &:hover{
+          color: white!important;
+          background-color: $matestack-dark-blue!important;
+          border-color: $matestack-dark-blue!important;
+        }
+      }
+      &.active{
+        #top-nav-btn{
+          color: white!important;
+          background-color: $matestack-dark-blue!important;
+          border-color: $matestack-dark-blue!important;
+        }
+      }
+    }
+    .btn-group-start{
+      margin-right: -3px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    .btn-group-middle{
+      margin-right: -3px;
+      border-radius: 0px;
+    }
+    .btn-group-end{
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+  }
+}

@@ -21,6 +21,12 @@ class ExamplesController < ApplicationController
       end
       session[:created_instances].unshift(submitted_attribute)
 
+      # only used on cable component demo
+      ActionCable.server.broadcast("matestack_ui_core", {
+        event: "new_element_created",
+        data: matestack_component(:li, text: submitted_attribute)
+      })
+
       render json: { message: "server message: created successfully" }, status: 200
     end
   end

@@ -54,29 +54,22 @@
     }
   }
 
-  .success-message{
-    font-size: 12px;
+  .message{
     position: absolute;
     bottom: 0px;
     height: 40px;
-    background-color: green;
     color: white;
     width: 100%;
     margin-left: -15px;
     padding-left: 10px;
     padding-top: 10px;
-  }
-  .failure-message{
     font-size: 12px;
-    position: absolute;
-    bottom: 0px;
-    height: 40px;
-    background-color: red;
-    color: white;
-    width: 100%;
-    margin-left: -15px;
-    padding-left: 10px;
-    padding-top: 10px;
+    &.success{
+      background-color: green;
+    }
+    &.failure{
+      background-color: red;
+    }
   }
 
   .preview-wrapper{

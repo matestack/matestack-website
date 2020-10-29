@@ -22,7 +22,6 @@ class Website::Components::FeaturesSection < Matestack::Ui::Component
           youtube height: "350px", width: "100%", youtube_id: '83AERu6pmg8', start_at: 0, privacy_mode: true
         end
       end
-      
     end
   end
 

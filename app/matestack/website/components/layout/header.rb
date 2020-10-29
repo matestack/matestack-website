@@ -16,7 +16,7 @@ class Website::Components::Layout::Header < Matestack::Ui::VueJsComponent
   end
 
   def logo
-    transition class:'navbar-brand', path: :root_path do
+    transition class:'navbar-brand', delay: 500, path: :root_path do
       img alt: t('header.logo_alt_text'),
         path: asset_pack_url('media/images/matestack-logo-red.png')
     end
@@ -37,18 +37,16 @@ class Website::Components::Layout::Header < Matestack::Ui::VueJsComponent
       ul class:'navbar-nav ml-auto align-items-center' do
 
         li class: 'nav-item my-3 my-md-0' do
-          link class: 'btn btn-secondary small-padding', path: :root_path,
-          params: { anchor: :support },
-          attributes: { "@click.prevent": "scrollTo(\"support\")" } do
-            plain t('header.nav.support')
-          end
+          link class: 'btn btn-secondary small-padding',
+            path: "https://github.com/matestack",
+            text: t('header.nav.github'),
+            target: "_blank"
         end
         li class: 'nav-item my-3 my-md-0' do
-          link class: 'btn btn-primary small-padding', path: :root_path,
-          params: { anchor: :services },
-          attributes: { "@click.prevent": "scrollTo(\"services\")" } do
-            plain t('header.nav.book')
-          end
+          link class: 'btn btn-primary small-padding',
+            path: "https://docs.matestack.io",
+            text: t('header.nav.docs'),
+            target: "_blank"
         end
 
       end

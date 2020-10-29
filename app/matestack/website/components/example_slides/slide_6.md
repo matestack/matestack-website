@@ -1,10 +1,8 @@
-`app/matestack/my_page.rb`
+`app/matestack/my_app/pages/my_page.rb`
 
 ```ruby
 
-class MyPage < Matestack::Ui::Page
-
-  #...
+class MyApp::Pages::SomePage < Matestack::Ui::Page
 
   def response
     form my_form_config do

@@ -1,20 +1,8 @@
 class Website::Components::SupportSection < Matestack::Ui::Component
 
   def response
-    section class: "support-section mt-5 pt-5 pb-5", id: "support" do
-      sponsoring_intro
+    section class: "support-section pb-5", id: "support" do
       sponsoring_tiers
-    end
-  end
-
-  def sponsoring_intro
-    div class: 'row mx-0' do
-      div class: 'offset-md-3 col-sm-6 pt-5 text-center' do
-        img path: asset_pack_url("media/images/#{t("landing_page.support.icon")}")
-        heading size: 2, class: "mt-5", text: t("landing_page.support.title")
-        br
-        paragraph text: t("landing_page.support.text")
-      end
     end
   end
 

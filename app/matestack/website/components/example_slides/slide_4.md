@@ -1,8 +1,8 @@
-`app/matestack/my_page.rb`
+`app/matestack/my_app/pages/some_page.rb`
 
 ```ruby
 
-class MyPage < Matestack::Ui::Page
+class MyApp::Pages::SomePage < Matestack::Ui::Page
 
   def response
     action my_action_config do
@@ -15,7 +15,7 @@ class MyPage < Matestack::Ui::Page
 
   def my_action_config
     {
-      path: :some_rails_route,
+      path: some_rails_route_path,
       method: :post,
       success: {
         emit: "some_event"

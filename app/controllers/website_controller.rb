@@ -4,8 +4,16 @@ class WebsiteController < ApplicationController
 
   matestack_app Website::App
 
-  def landing_page
-    render Website::Pages::LandingPage
+  def open_source
+    render Website::Pages::OpenSource
+  end
+
+  def addons
+    render Website::Pages::Addons
+  end
+
+  def services
+    render Website::Pages::Services
   end
 
   def imprint

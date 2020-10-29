@@ -1,20 +1,8 @@
 class Website::Components::ServicesSection < Matestack::Ui::Component
 
   def response
-    section class: "services-section pt-5 pb-5", id: "services" do
-      services_intro
+    section class: "services-section pb-5", id: "services" do
       services_overview
-    end
-  end
-
-  def services_intro
-    div class: 'row mx-0' do
-      div class: 'offset-md-3 col-sm-6 pt-5 text-center' do
-        img path: asset_pack_url("media/images/#{t("landing_page.services.icon")}")
-        heading size: 2, class: "mt-5", text: t("landing_page.services.title")
-        br
-        paragraph text: t("landing_page.services.text")
-      end
     end
   end
 

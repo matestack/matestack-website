@@ -1,8 +1,8 @@
-`app/matestack/my_page.rb`
+`app/matestack/my_app/pages/some_page.rb`
 
 ```ruby
 
-class MyPage < Matestack::Ui::Page
+class MyApp::Pages::SomePage < Matestack::Ui::Page
 
   def prepare
     @items = [

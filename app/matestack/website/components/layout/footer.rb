@@ -12,11 +12,11 @@ class Website::Components::Layout::Footer < Matestack::Ui::Component
           div class: "col-lg-6 pt-5 py-5 pt-lg-2 text-center text-lg-right" do
             plain t('footer.copyright_notice')
             plain "|"
-            transition path: :imprint_path do
+            transition path: :imprint_path, delay: 300 do
               plain t('footer.imprint_link_text')
             end
             plain "|"
-            transition path: :privacy_path do
+            transition path: :privacy_path, delay: 300 do
               plain t('footer.privacy_policy_link_text')
             end
           end

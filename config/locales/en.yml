@@ -33,13 +33,80 @@ en:
   header:
     logo_alt_text: "matestack"
     nav:
-      support: "Support us"
-      book: "Book us"
+      github: "GitHub"
+      docs: "Documentation"
   footer:
     copyright_notice: "© 2020 Matestack GmbH"
     imprint_link_text: "Imprint"
     privacy_policy_link_text: "Privacy policy"
   example_slides:
+    component_examples:
+      slide_1:
+        heading: "Implement UI components in pure Ruby"
+        text_1: "Create Ruby classes within your Rails project and call matestack's core components through a Ruby DSL in order to craft your UIs."
+        text_2: "The Ruby method \"div\" for example calls one of the static core components, responsible for rendering HTML tags. A component can take Strings, Integers, Symbols, Arrays or Hashes (...) as optional properties (e.g. \"title\") or require them (e.g. \"body\")."
+      slide_2:
+        heading: "Use your Ruby UI components on your existing Rails views"
+        text_1: "Register your Ruby UI component classes with your desired DSL method and use the \"matestack_component\" helper in order to render your component within existing ERB views or Rails controllers."
+        text_2: "The Ruby method \"card\" for example calls your \"Card\" class, enabling you to create a reuseable card components, abstracting UI complexity in your own components."
+      slide_3:
+        heading: "Use Ruby methods as partials"
+        text_1: "Split your UI implementation into multiple small chunks helping others (and yourself) to better understand your implementation."
+        text_2: "Using this approach helps you to create a clean, readable and maintainable codebase."
+      slide_4:
+        heading: "Use class inheritance"
+        text_1: "Because it's just a Ruby class, you can use class inheritance in order to further improve the quality of your UI implementation."
+        text_2: "Class inheritance can be used to easily create variants of UI components but still reuse parts of the implementation"
+      slide_5:
+        heading: "Use components within components"
+        text_1: "Just like you used matestack's core components on your own UI component, you can use your own UI components within other custom UI components."
+        text_2: "You decide when using a Ruby method partial should be replaced by another self contained UI component!"
+      slide_6:
+        heading: "Yield components into components"
+        text_1: "Sometimes it's not enough to just pass simple data into a component. No worries! You can just yield a block into your components!"
+        text_2: "Using this approach gives you more flexibility when using your UI components. Ofcourse yielding can be used alongside passing in simple params."
+      slide_7:
+        heading: "Use named slots for advanced content injection"
+        text_1: "If you need to inject multiple blocks into your UI component, you can use \"slots\"!"
+        text_2: "Slots help you to build complex UI components with multiple named content placeholders for highest implementation flexibility!"
+    reactivity_examples:
+      slide_1:
+        heading: "Toggle parts of the UI based on events"
+        text_1: "Matestack offers an event hub. Reactive components can emit and receive events through this event hub. \"onclick\" and \"toggle\" calling two of these reactive core components."
+        text_2: "\"onclick\" emits an event which causes the body of the \"toggle\" component to be visible for 5 seconds in this example"
+      slide_2:
+        heading: "Call controller actions without JavaScript"
+        text_1: "Core components offer basic dynamic behaviour and let you easily call controller actions and react to server responses on the client side without full page reload."
+        text_2: "The \"action\" component is configured to emit an event after successfully performed an HTTP request against a Rails controller action, which is received by the \"toggle\" component, displaying the success message."
+      slide_3:
+        heading: "Dynamically handle form input without JavaScript"
+        text_1: "Create dynamic forms for ActiveRecord Models (or plain objects) and display server side responses, like validation errors or success messages, without relying on a full page reload."
+        text_2: "Events emitted by the \"form\" component can be used to toggle parts of the UI."
+      slide_4:
+        heading: "Implement asynchronous, event-based UI rerendering in pure Ruby"
+        text_1: "Using matestack's built-in event system, you can rerender parts of the UI on client side events, such as form or action submissions. Even server side events pushed via ActionCable may be received!"
+        text_2: "The \"async\" component requests a new version of its body at the server via an HTTP GET request after receiving the configured event. After successful server response, the DOM of the \"async\" component gets updated. Everything else stays untouched."
+      slide_5:
+        heading: "Manipulate parts of the UI via ActionCable"
+        text_1: "\"async\" rerenders its whole body - but what about just appending the element to the list after successful form submission?"
+        text_2: "The \"cable\" component can be configured to receive events and data pushed via ActionCable from the server side and just append/prepend new chunks of HTML (ideally rendered through a component) to the current \"cable\" component body. Updating and deleting is also supported!"
+      slide_6:
+        heading: "Easily extend with Vue.js"
+        text_1: "Matestack's dynamic parts are built on Vue.js. If you want to implement custom dynamic behaviour, you can simply create your own Vue components and use them along matestacks core components."
+        text_2: "It's even possible to interact with matestack's core components using the built-in event bus."
+    spa_examples:
+      slide_1:
+        heading: "Create your layouts and views in pure Ruby"
+        text_1: "The app class is used to define a layout, usually containing some kind of header, footer and navigation. The page class is used to define a view. Following the same principles as seen on components, you can use components (core or your own) in order to create the UI"
+        text_2: "The \"transition\" component enables dynamic page transition, replacing the content within \"yield_page\" with new serverside rendered content."
+      slide_2:
+        heading: "Apps and pages are referenced in your Rails controllers and actions"
+        text_1: "Instead of referencing Rails layouts and views on your controllers, you just use apps and pages as substitutes."
+        text_2: "Work with controllers, actions and routing as you're used to! Controller hooks (e.g. devise's authenticate_user) would still work!"
+      slide_3:
+        heading: "Use CSS animations for fancy page transition animations"
+        text_1: "Use matestack's css classes applied to the wrapping DOM structure of a page in order to add CSS animiations, whenever a page transition is performed."
+        text_2: "You can even inject a loading state element, enriching your page transition effect."
     slide_1:
       heading: "Define your UI in Ruby classes"
       text_1: "Create Ruby classes within your Rails project and use methods like \"div\" to define your user interface."
@@ -66,17 +133,31 @@ en:
       text_2: "It's even possible to interact with matestack's core components using the built-in event bus."
   landing_page:
     hero:
-      title: "Escape the frontend hustle & easily create interactive web apps in pure Ruby."
-      text_1: "Matestack provides a collection of open source gems made for Ruby on Rails developers. Matestack enables you to craft interactive web UIs without JavaScript in pure Ruby with minimum effort. UI code becomes a native and fun part of your Rails app."
-      text_2: "Work with pure Ruby. If necessary, extend with pure JavaScript. No Opal involved."
+      title_1: "Your Rails views reimagined"
+      title_2: "Boost your productivity & easily create component based web UIs in pure Ruby."
+      title_3: "Reactivity included if desired."
+      text_1: "Matestack provides a collection of open source gems made for Ruby on Rails developers. Matestack enables you to craft maintainable web UIs in pure Ruby, skipping ERB and HTML. UI code becomes a native and fun part of your Rails app. Thanks to reactive core components, reactivity can be optionally added on top without writing JavaScript, just using a simple Ruby DSL."
+      text_2: "You end up writing 50% less code while increasing productivity, maintainability and developer happiness. Work with pure Ruby. If necessary, extend with pure JavaScript. No Opal involved."
     sub_hero:
       title: "Boost your productivity"
       text: "Matestack enables you to define sophisticated UI behavior without touching JavaScript and HTML. You end up writing 50% less code while increasing productivity, maintainability and developer happiness."
+    components_examples_section:
+      number: 1
+      title: "Create UI components in pure Ruby"
+      text: "Craft your UI based on your components written in pure Ruby. Utilizing Ruby's amazing language features, you're able to create a cleaner and more maintainable UI implementation."
+    reactivity_examples_section:
+      number: 2
+      title: "Use reactive UI components in pure Ruby"
+      text: "What about going even one step further and implement REACTIVE UIs in pure Ruby? Matestack's reactive core components can be used with a simple Ruby DSL enabling you to create reactive UIs without touching JavaScript!"
+    spa_examples_section:
+      number: 3
+      title: "Create whole SPA-like apps in pure Ruby"
+      text: "The last step in order to leverage the full Matestack power: Create app (~Rails layout) and page (Rails ~view) classes and implement dynamic page transitions without any JavaScript implementation required."
     features:
       progressive:
         icon: "matestack-code.png"
         title: "Progressive integration"
-        text: "Easily integrate matestack into existing Rails projects. Switch to the fullstack Ruby experience step by step."
+        text: "Easily integrate Matestack into existing Rails projects. Switch to the fullstack Ruby experience step by step."
       components:
         icon: "matestack-ruby.png"
         title: "Plugable UI components"
@@ -88,7 +169,7 @@ en:
     support:
       icon: "matestack-maintenance.png"
       title: "Sustainable open source"
-      text: "Matestack's core libraries are free and open source - and sustainable open source development requires proper funding. We therefore offer addons, tools, advanced documentation and premium support in order to allow a growing team to work on matestack fulltime."
+      text: "Matestack's core libraries are free and open source - and sustainable open source development requires proper funding. We therefore offer addons, tools, advanced documentation and premium support in order to allow a growing team to work on Matestack fulltime."
       sponsoring_tiers:
         title: "GitHub sponsoring tiers:"
         tiers:
@@ -99,23 +180,23 @@ en:
             price_per_month: "9 $/month"
           solo_dev:
             title: "Solo Developer"
-            description: "You use matestack as a solo developer and want even more sugar. With this tier you get:"
+            description: "You use Matestack as a solo developer and want even more sugar. With this tier you get:"
             included_items:
               - "Access to a private Slack channel"
-              - "Access to advanced in-depth guides (coming fall 2020)"
-              - "Access to addon gems like material/bootstrap UI components (coming fall 2020)"
+              - "Access to advanced in-depth guides (coming soon)"
+              - "Access to addon gems like material/bootstrap UI components (coming soon)"
             price_per_month: "19 $/month"
           startup:
             title: "Startup"
-            description: "You use matestack in your startup in a team of 1-10 developers and want to boost your performance even more. With this tier you get:"
+            description: "You use Matestack in your startup in a team of 1-10 developers and want to boost your performance even more. With this tier you get:"
             included_items:
               - "Everything from \"Solo Developer\""
-              - "Priorotized Github issue processing"
+              - "Priorotized GitHub issue processing"
               - "Small logo on GitHub project page & this website"
             price_per_month: "99 $/month"
           business:
             title: "Business"
-            description: "You use matestack in your business in a team of 11-20 developers and can imagine how matestack's add-ons and extendend guides would provide greate value to your team. With this tear you get:"
+            description: "You use Matestack in your business in a team of 11-20 developers and can imagine how matestack's add-ons and extendend guides would provide greate value to your team. With this tear you get:"
             included_items:
               - "Everything from \"Startup\""
               - "Medium sized logo on GitHub project page & this website"
@@ -123,7 +204,7 @@ en:
             price_per_month: "299 $/month"
           enterprise:
             title: "Big Business"
-            description: "You use matestack in your business in a team of 20+ developers and know what a 50% decrease of UI development effort means to your budgets. With this plan you get:"
+            description: "You use Matestack in your business in a team of 20+ developers and know what a 50% decrease of UI development effort means to your budgets. With this plan you get:"
             included_items:
               - "Everything from \"Startup\""
               - "Large logo on GitHub project page & this website"
@@ -134,29 +215,29 @@ en:
       title: "Add-ons for sponsors"
       text_1: "In addition to our open source projects, we provide our sponsors with various add-ons in order to further increase their productivity."
       text_2: "Currently we work on a bootstrap add-on, giving you the possibility to use bootstrap components without writing all the DOM structure and CSS classes. Just use some lines of pure Ruby to get all what bootstrap has to offer. With this addon, you are able to create beautiful web apps even faster!"
-      cta_text: "Coming fall 2020"
+      cta_text: "Coming soon"
     indepth_guides:
       title: "Extendend know-how for sponsors"
       text_1: "On top of our comprehensive and growing documentation, we will offer our sponsors written guides about advanced topics."
       text_2: "Currently we work on guides covering topics such as: 'handling multilanguage apps', 'creating mutlistep forms' and more!"
-      cta_text: "Coming fall 2020"
+      cta_text: "Coming soon"
     services:
       icon: "matestack-support.png"
       title: "Let's succeed together"
       text: "We would love to help you succeed with our technology. We can help you in various ways."
       book_cta_text: "Book now"
       service_types:
-        title: "Our services:"
+        title: "Our services around Rails and Matestack:"
         types:
           workshop:
             title: "Workshop"
-            description: "You'd like to start using matestack in your business, but need help to get things going and bring your team up to speed? We're there for you!"
+            description: "You'd like to start using Matestack in your business, but need help to get things going and bring your team up to speed? We're there for you!"
           support:
             title: "Support on demand"
-            description: "You're already using matestack but need support on specific issues? Just book our experts to help you out efficiently!"
+            description: "You're already using Matestack but need support on specific issues? Just book our experts to help you out efficiently!"
           development:
             title: "Development on demand"
-            description: "You want us to join your development team for some time? Great Idea! We are happy to work on your projects and onboard your team concurrently!"
+            description: "You want us to join your development team for some time? Great Idea! We are happy to work on your projects! Just Ruby/Rails or Matestack on top. You decide!"
           refactoring:
             title: "Refactoring"
             description: "You need us to refactor some bulky legacy views and turn them into future proof, maintainable Ruby code? We love this challenge!"
@@ -164,7 +245,7 @@ en:
             title: "Turnkey applications"
             description: "Concept and fundig are there, and you \"only\" need developers/a development team to build the applications? Our Ruby experts are more than happy to do so! Both handover and ongoing support possible."
     team:
-      title: "A team full of mates"
+      title: "A team full of mates ready to boost your productivity"
       core_contributors: "+27 core contributors"
       join_team_cta: "Join the team!"
       members:
@@ -172,29 +253,24 @@ en:
           img_path: "team/jonas.png"
           name: "Jonas Jabari"
           twitter_handle: "@jonasjabari"
-          role: "Senior Ruby developer, creator and CEO of matestack"
-          description: "\"While being a solo developer, I often struggled with the growing complexity of web development. I created matestack to get things done easier, faster and more sustainable. After some time, I decided to publish my work and now look forward to grow this project through open source!\""
+          role: "Senior Ruby/JavaScript developer, creator and CEO of matestack"
+          description: "\"While being a solo developer, I often struggled with the growing complexity of web development. I created Matestack to get things done easier, faster and more sustainable. After some time, I decided to publish my work and now look forward to grow this project through open source!\""
         nils:
           name: "Nils Henning"
           img_path: "team/nils.png"
-          role: "Senior Ruby developer, matestack core development"
-          description: "tbd"
-        anh:
-          name: "Anh Nguyen"
-          img_path: "team/anh.png"
-          role: "Ruby developer, matestack application development"
+          role: "Senior Ruby/JavaScript developer, Matestack core development"
           description: "tbd"
         pascal:
           name: "Pascal Wengerter"
           img_path: "team/pascal.png"
-          role: "Ruby developer, matestack application development"
+          role: "Ruby developer, community and marketing management"
           description: "tbd"
     getting_started:
       title: "Jump right in!"
       request_help_cta: "Request help"
       getting_started_cta: "Getting started"
       github_stars: "230+"
-      github_stars_text: "Github Stars"
+      github_stars_text: "GitHub Stars"
       version: "1.1.0"
       version_text: "Version"
       licencse: "LGPLv3"
@@ -209,3 +285,13 @@ en:
         submit_text: "submit"
         success_heading: "Subscription requested!"
         success_description: "Please confirm your subscription using the link given in the email we just sent you."
+  addons:
+    hero:
+      title_1: "Sustainable open source through GitHub sponsoring"
+      text_1: "Matestack's core libraries are free and open source - and sustainable open source development requires proper funding. We therefore offer addons, tools, advanced documentation and premium support in order to allow a growing team to work on Matestack fulltime."
+      text_2: "We would be super happy to welcome you as a sponsor and help you succeed even better with matestack!"
+  services:
+    hero:
+      title_1: "Let's succeed together"
+      text_1: "We would love to help you with our expertise around Ruby, JavaScript, Rails, Vue.js, Docker, Testing, CI... and of course: Matestack. You decide if you just need specific support or if we should build whole applications for you. Just Ruby/Rails or Matestack on top!"
+      text_2: "Revenue will be reinvested to fund ongoing Matestack core development, documentation and maintanance."
