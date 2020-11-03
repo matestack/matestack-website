@@ -38,6 +38,12 @@ class Website::Components::Layout::Header < Matestack::Ui::VueJsComponent
 
         li class: 'nav-item my-3 my-md-0' do
           link class: 'btn btn-secondary small-padding',
+            path: "https://discord.gg/c6tQxFG",
+            text: t('header.nav.discord'),
+            target: "_blank"
+        end
+        li class: 'nav-item my-3 my-md-0' do
+          link class: 'btn btn-secondary small-padding',
             path: "https://github.com/matestack",
             text: t('header.nav.github'),
             target: "_blank"

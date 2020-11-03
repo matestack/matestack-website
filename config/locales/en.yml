@@ -35,6 +35,7 @@ en:
     nav:
       github: "GitHub"
       docs: "Documentation"
+      discord: "Discord Chat"
   footer:
     copyright_notice: "© 2020 Matestack GmbH"
     imprint_link_text: "Imprint"
@@ -268,8 +269,10 @@ en:
     getting_started:
       title: "Jump right in!"
       request_help_cta: "Request help"
+      weekly_qa_1: "Q/A Session Tuesday 10 AM CET"
+      weekly_qa_2: "Q/A Session Thursday 6 PM CET"
       getting_started_cta: "Getting started"
-      github_stars: "230+"
+      github_stars: "260+"
       github_stars_text: "GitHub Stars"
       version: "1.1.0"
       version_text: "Version"
