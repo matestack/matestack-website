@@ -20,6 +20,7 @@ services:
       - "3000:3000"
     links:
       - postgres
+      - redis
     environment:
       RAILS_ENV: "development"
       POSTGRES_DB: "development"
@@ -29,7 +30,14 @@ services:
       - node-volume:/app/node_modules
     command: "bundle exec rails server --binding 0.0.0.0 --port 3000"
 
+  redis:
+    restart: always
+    image: redis:5.0.7-alpine
+    volumes:
+      - redis-volume:/data
+
 volumes:
   data-volume:
   gem-volume:
   node-volume:
+  redis-volume:
