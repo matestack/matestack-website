@@ -12,7 +12,7 @@ class Website::Components::HeroSection < Matestack::Ui::Component
       div class: 'row' do
         div class: 'services-text col-lg-7 col-md-7 col-sm-12 pt-5' do
           heading size: 1, text: title_1, class: "mt-3"
-          heading size: 3, text: title_2, class: "mt-5" if title_2.present?
+          heading size: 3, text: title_2, class: "mt-3" if title_2.present?
           heading size: 3, text: title_3, class: "mt-4" if title_3.present?
           br
           paragraph class: 'paragraph-margin', text: text_1

@@ -108,30 +108,6 @@ en:
         heading: "Use CSS animations for fancy page transition animations"
         text_1: "Use matestack's css classes applied to the wrapping DOM structure of a page in order to add CSS animiations, whenever a page transition is performed."
         text_2: "You can even inject a loading state element, enriching your page transition effect."
-    slide_1:
-      heading: "Define your UI in Ruby classes"
-      text_1: "Create Ruby classes within your Rails project and use methods like \"div\" to define your user interface."
-      text_2: "The \"div\" method calls one of the static core components, responsible for rendering HTML tags."
-    slide_2:
-      heading: "Use partials for a clean structure"
-      text_1: "Simple Ruby methods help you creating well structured UI code."
-    slide_3:
-      heading: "Create your own components"
-      text_1: "Instead of using partials, you can move parts of your UI code to custom component classes. These can then be reused across different parts of your application and make for very DRY code."
-    slide_4:
-      heading: "Call controller actions without JavaScript"
-      text_1: "Core components offer basic dynamic behaviour and let you easily call controller actions and react to server responses on the client side without full page reload."
-    slide_5:
-      heading: "Dynamically handle form input without JavaScript"
-      text_1: "Create dynamic forms for ActiveRecord Models (or plain objects) and display server side responses, like validation errors or success messages, without relying on a full page reload."
-    slide_6:
-      heading: "Define asynchronous, event-based UI rerendering in pure Ruby"
-      text_1: "Using matestack's built-in event system, you can rerender parts of the UI on client side events, such as form or action submissions."
-      text_2: "This also works for server side events broadcasted via ActionCable!"
-    slide_7:
-      heading: "Easily extend with Vue.js"
-      text_1: "Matestack's dynamic parts are built on Vue.js. If you want to implement custom dynamic behaviour, you can simply create your own Vue components and use them along matestacks core components."
-      text_2: "It's even possible to interact with matestack's core components using the built-in event bus."
   landing_page:
     hero:
       title_1: "Your Rails views reimagined"
@@ -172,7 +148,7 @@ en:
       title: "Sustainable open source"
       text: "Matestack's core libraries are free and open source - and sustainable open source development requires proper funding. We therefore offer addons, tools, advanced documentation and premium support in order to allow a growing team to work on Matestack fulltime."
       sponsoring_tiers:
-        title: "GitHub sponsoring tiers:"
+        title: "Access via GitHub sponsoring:"
         tiers:
           supporter:
             title: "Supporter"
@@ -290,9 +266,45 @@ en:
         success_description: "Please confirm your subscription using the link given in the email we just sent you."
   addons:
     hero:
-      title_1: "Sustainable open source through GitHub sponsoring"
-      text_1: "Matestack's core libraries are free and open source - and sustainable open source development requires proper funding. We therefore offer addons, tools, advanced documentation and premium support in order to allow a growing team to work on Matestack fulltime."
-      text_2: "We would be super happy to welcome you as a sponsor and help you succeed even better with matestack!"
+      title_1: "Create beautiful and flexible Admin UIs in pure Ruby"
+      title_2: "Matestack UI Bootstrap ships styled UI components and smart CRUD tools for maximum productivity"
+      text_1: "Rather than configuring something like ActiveAdmin, why not plugging prebuilt components together being able to properly implement unique admin workflows and reuse existing security policies?"
+      text_2: "Just like Matestack's core library, the addon library matestack-ui-bootstrap can be seamlessly integrated on top of existing controllers, models, routes and authentication/authorisation policies. Use solid UI abstraction while not compromising on the flexibility you need to drive your business!"
+    bootstrap:
+      access:
+        title: "Access via GitHub Sponsoring"
+        text_1: "matestack-ui-bootstrap is available for GitHub Sponsors (starting from the 'solo developer' tier) starting at the first of December 2020. You will get a key which can be used in your Gemfile in order to install the gem."
+        text_2: "We offer intensive, free personal onboarding and support for the first 10 subscribers (8 left) until things work as smoothly as expected!"
+        cta: "Be one of the first 10 subscribers!"
+      features:
+        progressive:
+          icon: "matestack-code.png"
+          title: "Progressive integration"
+          text: "Just like matestack-ui-core, easily integrate matestack-ui-bootstrap into existing Rails projects. Integrate bootstrap components step by step."
+        flexible:
+          icon: "matestack-ruby.png"
+          title: "Flexible abstraction"
+          text: "Unlike other admin UI gems, you can use solid abstraction while still being able to implement and reuse your business logic without being bound to a configuration-only approach!"
+        customize:
+          icon: "matestack-branches.png"
+          title: "Tailor to your usecase"
+          text: "Besides styling customizations, you are completely free to integrate the components into your individual workflows, security polcies and data structures."
+      admin_templates:
+        title: "Flexible, prebuilt layouts"
+        text_1: "Use our prebuilt templates through class inheritance in order to quickly setup typical layouts including sidebar and header navigation. Styles can be customized via SCSS theming."
+        text_2: "Thanks to the fact that you're dealing with pure Ruby classes, it's also retty easy to modify prebuilt UI structures and appearance in order to tailor the admin app to your individual needs."
+      smart_collections:
+        title: "Smart collections, a few lines of Ruby away"
+        text_1: "Implementing a paginated, filterable and orderable collection is exhausting. And what about a reactive collection? You don't want to build that yourself! That's why we've created the collection component, shipped within matestack-ui-core. The smart collection shipped with matestack-ui-bootstrap gives you even more:"
+        text_2: "5 lines of Ruby is enough to add a styled, reactive paginated collection with filters to your UI. And it's still flexible enough to add custom collection item actions!"
+      smart_forms:
+        title: "Reactive forms in no time"
+        text_1: "Matestack's core library already ships reactive forms, used with pure Ruby. Within matestack-ui-bootstrap you get an additional abstraction layer, enabling you to configure reactive forms with a few lines of Ruby!"
+        text_2: "Create styled forms, with reactive error/success rendering without thinking of any implementation detail!"
+      bootstrap_components:
+        title: "All Bootstrap components, available in pure Ruby"
+        text_1: "Alongside smart components, matestack-ui-bootstrap ships all Bootstrap components enabling you to use them in pure Ruby."
+        text_2: "Imagine adding a Bootstrap card component within one line of Ruby!"
   services:
     hero:
       title_1: "Let's succeed together"
