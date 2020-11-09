@@ -316,3 +316,17 @@ en:
       title_2: "Based in Germany, we're there for you wherever you are!"
       text_1: "We would love to help you with our expertise around Ruby, JavaScript, Rails, Vue.js, Docker, Testing, CI... and of course: Matestack. You decide if you just need specific support or if we should build whole applications for you. Just Ruby/Rails or Matestack on top!"
       text_2: "Revenue will be reinvested to fund ongoing Matestack core development, documentation and maintanance."
+    case_studies:
+      title: "Some of our projects:"
+      abc:
+        title: "Booking system for ABC workspaces"
+        category: "Turnkey application, web app"
+        img_path: "case-studies/abc.png"
+        text_1: "In 2019, we we're asked to build a booking system for ABC from scratch. Until then the client managed bookings manually. Hundreds of offices in three cities need to be bookable online. Furthermore the client wanted the booking system to be embedded in a unique homepage design, representing the quality of ABC's services."
+        text_2: "Due to individual booking constraint, we've created a custom Rails app and implemented all business logic required managing online bookings together with Stripe payment integration. Additionally we've built a member login enabling the customers of ABC to manage their bookings. Furthermore we've implemented an Admin UI, enabling ABC to manage all bookings and offices. The UI layer was built with matestack-ui-core based on the screendesigns coming from our partner W11 GmbH."
+      workey:
+        title: "Progressive web app for WORKEY"
+        category: "Turnkey application, progressive web app"
+        img_path: "case-studies/workey.png"
+        text_1: "In 2020, we've created a PWA for WORKEY. Within this app, the user is asked for some feedback concerning the current work environment. The main goal: get to know how to improve the well being of an employee based on feedback."
+        text_2: "As it's not to easy to get feedback from employees on a daily basis, the client wanted to offer the employees an installable and enjoyable app. Additionally it was important to remind the employee via push notification to complete the daily questionnaire. We've shipped a PWA based on a Rails application combined with matestack-ui-core."

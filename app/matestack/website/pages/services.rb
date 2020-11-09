@@ -14,6 +14,9 @@ class Website::Pages::Services < Matestack::Ui::Page
     div class: "container-fluid px-0" do
       website_services_section
     end
+    div class: "container" do
+      website_case_studies_section
+    end
     div class: "container-fluid px-0" do
       website_getting_started_section
     end

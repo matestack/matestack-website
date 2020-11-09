@@ -17,17 +17,9 @@ module Website::Components::Registry
     website_indepth_guides_section: Website::Components::IndepthGuidesSection,
     website_services_section: Website::Components::ServicesSection,
     website_team_section: Website::Components::TeamSection,
+    website_case_studies_section: Website::Components::CaseStudiesSection,
     website_getting_started_section: Website::Components::GettingStartedSection,
     website_newsletter_section: Website::Components::NewsletterSection,
-    example_slide_1: Website::Components::ExampleSlides::Slide1,
-    example_slide_2: Website::Components::ExampleSlides::Slide2,
-    example_slide_3: Website::Components::ExampleSlides::Slide3,
-    my_card_component: Website::Components::ExampleSlides::MyCardComponent,
-    example_slide_4: Website::Components::ExampleSlides::Slide4,
-    example_slide_5: Website::Components::ExampleSlides::Slide5,
-    example_slide_6: Website::Components::ExampleSlides::Slide6,
-    example_slide_7: Website::Components::ExampleSlides::Slide7,
-    my_vue_js_component: Website::Components::ExampleSlides::MyVueJsComponent,
     website_legal_imprint: Website::Components::Legal::Imprint,
     website_legal_privacy: Website::Components::Legal::Privacy
   )
@@ -51,6 +43,7 @@ module Website::Components::Registry
     reactivity_example_slide_4: Website::Components::ExampleSlides::ReactivityExamples::Slide4,
     reactivity_example_slide_5: Website::Components::ExampleSlides::ReactivityExamples::Slide5,
     reactivity_example_slide_6: Website::Components::ExampleSlides::ReactivityExamples::Slide6,
+    my_vue_js_component: Website::Components::ExampleSlides::ReactivityExamples::MyVueJsComponent
   )
 
   Matestack::Ui::Core::Component::Registry.register_components(
