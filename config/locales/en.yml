@@ -308,5 +308,6 @@ en:
   services:
     hero:
       title_1: "Let's succeed together"
+      title_2: "Based in Germany, we're there for you wherever you are!"
       text_1: "We would love to help you with our expertise around Ruby, JavaScript, Rails, Vue.js, Docker, Testing, CI... and of course: Matestack. You decide if you just need specific support or if we should build whole applications for you. Just Ruby/Rails or Matestack on top!"
       text_2: "Revenue will be reinvested to fund ongoing Matestack core development, documentation and maintanance."

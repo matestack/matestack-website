@@ -3,6 +3,7 @@ class Website::Pages::Services < Matestack::Ui::Page
   def response
     div class: "container" do
       website_hero_section title_1: t("services.hero.title_1"),
+        title_2: t("services.hero.title_2"),
         text_1: t("services.hero.text_1"),
         text_2: t("services.hero.text_2"),
         img_url: asset_pack_url('media/images/matestack-indepth-guides.png')
