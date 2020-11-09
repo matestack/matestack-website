@@ -240,7 +240,12 @@ en:
         pascal:
           name: "Pascal Wengerter"
           img_path: "team/pascal.png"
-          role: "Ruby developer, community and marketing management"
+          role: "Ruby developer, community management"
+          description: "tbd"
+        andreas:
+          name: "Andreas Eiselt"
+          img_path: "team/andreas.jpeg"
+          role: "Partner, senior Ruby/JavaScript developer"
           description: "tbd"
     getting_started:
       title: "Jump right in!"
