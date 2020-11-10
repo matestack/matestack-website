@@ -245,7 +245,7 @@ en:
         andreas:
           name: "Andreas Eiselt"
           img_path: "team/andreas.jpeg"
-          role: "Partner, senior Ruby/JavaScript developer"
+          role: "Partner, Data scientist and senior Ruby/JavaScript developer"
           description: "tbd"
     getting_started:
       title: "Jump right in!"
