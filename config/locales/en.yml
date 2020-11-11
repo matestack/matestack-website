@@ -297,11 +297,11 @@ en:
       admin_templates:
         title: "Flexible, prebuilt layouts"
         text_1: "Use our prebuilt templates through class inheritance in order to quickly setup typical layouts including sidebar and header navigation. Styles can be customized via SCSS theming."
-        text_2: "Thanks to the fact that you're dealing with pure Ruby classes, it's also retty easy to modify prebuilt UI structures and appearance in order to tailor the admin app to your individual needs."
+        text_2: "Thanks to the fact that you're dealing with pure Ruby classes, it's also pretty easy to modify prebuilt UI structures and appearance in order to tailor the admin app to your individual needs."
       smart_collections:
         title: "Smart collections, a few lines of Ruby away"
         text_1: "Implementing a paginated, filterable and orderable collection is exhausting. And what about a reactive collection? You don't want to build that yourself! That's why we've created the collection component, shipped within matestack-ui-core. The smart collection shipped with matestack-ui-bootstrap gives you even more:"
-        text_2: "5 lines of Ruby is enough to add a styled, reactive paginated collection with filters to your UI. And it's still flexible enough to add custom collection item actions!"
+        text_2: "A few lines of Ruby is enough to add a styled, reactive paginated collection with filters to your UI. And it's still flexible enough to add custom collection item actions!"
       smart_forms:
         title: "Reactive forms in no time"
         text_1: "Matestack's core library already ships reactive forms, used with pure Ruby. Within matestack-ui-bootstrap you get an additional abstraction layer, enabling you to configure reactive forms with a few lines of Ruby!"
