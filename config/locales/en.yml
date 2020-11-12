@@ -304,12 +304,13 @@ en:
         text_2: "A few lines of Ruby is enough to add a styled, reactive paginated collection with filters to your UI!"
       smart_forms:
         title: "Reactive forms in no time"
-        text_1: "Matestack's core library already ships reactive forms, used with pure Ruby. Within matestack-ui-bootstrap you get an additional abstraction layer, enabling you to configure reactive forms with a few lines of Ruby!"
+        text_1: "Matestack's core library already ships reactive forms, used with pure Ruby. Within matestack-ui-bootstrap you get styled form component, enabling you to create beautiful, reactive forms with a few lines of Ruby!"
         text_2: "Create styled forms, with reactive error/success rendering without thinking of any implementation detail!"
       bootstrap_components:
         title: "All Bootstrap components, available in pure Ruby"
         text_1: "Alongside smart components, matestack-ui-bootstrap ships all Bootstrap components enabling you to use them in pure Ruby."
-        text_2: "Imagine adding a Bootstrap card component within one line of Ruby!"
+        text_2: "Imagine adding a Bootstrap card component within one line of Ruby while still beeing able to use all core components, Bootstrap's utility classes or custom CSS. That means you're able to use Bootstrap components with a high level of abstraction for maximum productivity right next to core components like 'div' with a lower level of abstraction for maximum flexibility!"
+        text_3: "On top of that, you're able to use all kinds of methods in order to render your UI based on conditions like 'current_user.is_super_admin?' for example. Adjusting the UI to your custom rules based on pure Ruby is super easy. That's what we call 'flexible abstraction'!"
   services:
     hero:
       title_1: "Let's succeed together"

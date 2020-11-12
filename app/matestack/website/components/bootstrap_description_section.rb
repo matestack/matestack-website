@@ -74,12 +74,13 @@ class Website::Components::BootstrapDescriptionSection < Matestack::Ui::Componen
           br
           paragraph class: 'paragraph-margin', text: t("addons.bootstrap.bootstrap_components.text_1")
           paragraph class: 'paragraph-margin', text: t("addons.bootstrap.bootstrap_components.text_2")
+          paragraph class: 'paragraph-margin', text: t("addons.bootstrap.bootstrap_components.text_3")
           div class: "code-preview" do
             markdown path: "matestack/website/components/bootstrap_addon_examples/components"
           end
         end
         div class: 'col-lg-5 col-md-5 col-sm-12  text-center' do
-          img class: "mt-5 w-50 shadow rounded-lg", path: asset_pack_url('media/images/matestack-ui-bootstrap/bootstrap-card.png')
+          img class: "mt-5 w-75 shadow rounded-lg px-2 py-2", path: asset_pack_url('media/images/matestack-ui-bootstrap/bootstrap-components.png')
         end
       end
     end
