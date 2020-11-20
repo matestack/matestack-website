@@ -12,7 +12,6 @@ class Website::Pages::Addons < Matestack::Ui::Page
       website_bootstrap_access_section
       website_bootstrap_features_section
       website_bootstrap_description_section
-      website_support_section
       # website_addons_section
       # website_indepth_guides_section
     end

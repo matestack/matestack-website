@@ -17,6 +17,7 @@ class Website::Pages::OpenSource < Matestack::Ui::Page
         website_reactivty_examples_section
         website_spa_examples_section
         website_features_section
+        website_support_section
       end
       div class: "container-fluid px-0" do
         website_getting_started_section

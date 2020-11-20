@@ -146,9 +146,9 @@ en:
     support:
       icon: "matestack-maintenance.png"
       title: "Sustainable open source"
-      text: "Matestack's core libraries are free and open source - and sustainable open source development requires proper funding. We therefore offer addons, tools, advanced documentation and premium support in order to allow a growing team to work on Matestack fulltime."
+      text: "Matestack's core libraries are free and open source - and sustainable open source development requires proper funding. We therefore offer extenden in-depth guides and premium support in order to allow a growing team to work on Matestack fulltime."
       sponsoring_tiers:
-        title: "Access via GitHub sponsoring:"
+        title: "GitHub sponsoring:"
         tiers:
           supporter:
             title: "Supporter"
@@ -159,9 +159,8 @@ en:
             title: "Solo Developer"
             description: "You use Matestack as a solo developer and want even more sugar. With this tier you get:"
             included_items:
-              - "Access to a private Slack channel"
+              - "Access to a private Discord channel"
               - "Access to advanced in-depth guides (coming soon)"
-              - "Access to addon gems like material/bootstrap UI components (coming soon)"
             price_per_month: "19 $/month"
           startup:
             title: "Startup"
@@ -173,7 +172,7 @@ en:
             price_per_month: "99 $/month"
           business:
             title: "Business"
-            description: "You use Matestack in your business in a team of 11-20 developers and can imagine how matestack's add-ons and extendend guides would provide greate value to your team. With this tear you get:"
+            description: "You use Matestack in your business in a team of 11-20 developers and can imagine how matestack's support and extendend guides would provide greate value to your team. With this tear you get:"
             included_items:
               - "Everything from \"Startup\""
               - "Medium sized logo on GitHub project page & this website"
@@ -186,7 +185,7 @@ en:
               - "Everything from \"Startup\""
               - "Large logo on GitHub project page & this website"
               - "Logo & description text in the documentation"
-              - "2 hour expert consulting per month"
+              - "2 hours expert consulting per month"
             price_per_month: "499 $/month"
     addons:
       title: "Add-ons for sponsors"
@@ -277,10 +276,10 @@ en:
       text_2: "Just like Matestack's core library, the addon library matestack-ui-bootstrap can be seamlessly integrated on top of existing controllers, models, routes and authentication/authorisation policies. Use solid UI abstraction while not compromising on the flexibility you need to drive your business!"
     bootstrap:
       access:
-        title: "Access via GitHub Sponsoring"
-        text_1: "matestack-ui-bootstrap is available for GitHub Sponsors (starting from the 'solo developer' tier) starting at the first of December 2020. You will get a key which can be used in your Gemfile in order to install the gem."
-        text_2: "We offer intensive, free personal onboarding and support for the first 10 subscribers (8 left) until things work as smoothly as expected!"
-        cta: "Be one of the first 10 subscribers!"
+        title: "Coming December 2020"
+        text_1: "matestack-ui-bootstrap provides extra value on top of our open source project and will be available for 990$/year."
+        text_2: "You will get a key which can be used in your Gemfile in order to install the gem. It is not billed per project or developer."
+        cta: "Request your free demo and Q/A session"
       features:
         progressive:
           icon: "matestack-code.png"
