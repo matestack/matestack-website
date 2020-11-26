@@ -10,6 +10,7 @@ class Website::Pages::Addons < Matestack::Ui::Page
     end
     div class: "container mt-5" do
       website_bootstrap_access_section
+      website_bootstrap_preview_section
       website_bootstrap_features_section
       website_bootstrap_description_section
       # website_addons_section

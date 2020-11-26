@@ -280,6 +280,10 @@ en:
         text_1: "matestack-ui-bootstrap provides extra value on top of our open source project and will be available for 990$/year."
         text_2: "You will get a key which can be used in your Gemfile in order to install the gem. It is not billed per project or developer."
         cta: "Request your free demo and Q/A session"
+      preview:
+        title: "Live Preview"
+        text_1: "Below you find a link to a dummy application built with matestack-ui-bootstrap. Heads up: That's an early alpha release under heavy development!"
+        cta: "See what you can build with matestack-ui-bootstrap"
       features:
         progressive:
           icon: "matestack-code.png"
