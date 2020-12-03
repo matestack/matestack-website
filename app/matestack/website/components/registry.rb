@@ -15,6 +15,7 @@ module Website::Components::Registry
     website_bootstrap_description_section: Website::Components::BootstrapDescriptionSection,
     website_bootstrap_features_section: Website::Components::BootstrapFeaturesSection,
     website_bootstrap_preview_section: Website::Components::BootstrapPreviewSection,
+    website_bootstrap_pricing_section: Website::Components::BootstrapPricingSection,
     website_indepth_guides_section: Website::Components::IndepthGuidesSection,
     website_services_section: Website::Components::ServicesSection,
     website_team_section: Website::Components::TeamSection,

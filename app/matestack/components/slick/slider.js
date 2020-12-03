@@ -6,6 +6,11 @@ MatestackUiCore.Vue.component('slick-slider', {
   data: function data() {
     return {};
   },
+  methods: {
+    nextSlide: function(){
+      $('#' + this.componentConfig["slider_id"]).slick('next');
+    }
+  },
   mounted: function(){
     var self = this;
     setTimeout(function () {

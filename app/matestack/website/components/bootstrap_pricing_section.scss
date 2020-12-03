@@ -1,0 +1,38 @@
+.bootstrap-pricing-section{
+  // background-color: $matestack-light-grey;
+
+  img {
+    width: 50px;
+  }
+
+  .tier-card{
+    padding: 0px;
+    overflow: hidden;
+    font-size: 14px;
+    // margin: 10px;
+    .included-items{
+      margin-bottom: 100px;
+    }
+    a {
+      position: absolute;
+      bottom: 20px;
+      width: 90%;
+      .btn-secondary{
+        font-size: 14px;
+      }
+    }
+    .title-section{
+      padding: 10px;
+      padding-top: 23px;
+      font-size: 16px;
+      height: 70px;
+      background-color: $matestack-dark-blue;
+      color: white;
+      border-color: $matestack-dark-blue;
+    }
+    .content-section{
+      margin-top: 15px;
+      padding: 10px;
+    }
+  }
+}

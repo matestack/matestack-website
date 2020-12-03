@@ -5,6 +5,7 @@ class Website::Components::ExampleSlides::Base < Matestack::Ui::Component
       div class: "row example-container" do
         div class: "col-xl-4 pt-3 pr-5 description-wrapper" do
           description_section
+          button class: "btn btn-secondary small-padding mb-3", attributes: {"@click": "nextSlide()"}, text: "Next Slide"
         end
         div class: "col-xl-8" do
           div class: "row code-preview-container shadow-sm bg-white rounded" do
