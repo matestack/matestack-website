@@ -3,7 +3,7 @@ class Website::Components::BootstrapPreviewSection < Matestack::Ui::Component
   def response
     section class: "bootstrap-preview-section" do
       div class: 'row justify-content-center mb-5' do
-        div class: 'col-sm-6 pt-5 text-center' do
+        div class: 'col-xl-6 pt-5 text-center' do
           heading size: 4, text: t("addons.bootstrap.preview.title")
           link path: "https://ui.matestack.io", target: "_blank" do
             img class: "mt-5 w-75 shadow rounded-lg", path: asset_pack_url('media/images/matestack-ui-bootstrap/admin-templates.png')

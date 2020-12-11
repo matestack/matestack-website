@@ -297,22 +297,34 @@ en:
           title: "Tailor to your usecase"
           text: "Besides styling customizations, you are completely free to integrate the components into your individual workflows, security polcies and data structures."
       admin_templates:
-        title: "Flexible, prebuilt layouts"
-        text_1: "Use our prebuilt templates through class inheritance in order to quickly setup typical layouts including sidebar and header navigation. Styles can be customized via SCSS theming."
+        title: "Flexible, responsive, prebuilt app layouts"
+        text_1: "Use our prebuilt app templates through class inheritance in order to quickly setup typical layouts including sidebar and header navigation. Styles can be customized via SCSS theming."
         text_2: "Thanks to the fact that you're dealing with pure Ruby classes, it's also pretty easy to modify prebuilt UI structures and appearance in order to tailor the admin app to your individual needs."
-      smart_collections:
-        title: "Smart collections, a few lines of Ruby away"
-        text_1: "Implementing a paginated, filterable and orderable collection is exhausting. And what about a reactive collection? You don't want to build that yourself! That's why we've created the collection component, shipped within matestack-ui-core. The smart collection shipped with matestack-ui gives you even more:"
-        text_2: "A few lines of Ruby is enough to add a styled, reactive paginated collection with filters to your UI!"
+      page_layout_components:
+        title: "Powerful page layout components for great UI experience"
+        text_1: "User components like `page_heading` or `section_card` together with grid components like `row` and `col` in order to quickly create a well structured, consistent and good looking UI."
+        text_2: "Split rendering of complex, data-intesive UIs with Matestack's core `async` component and increase initial page load performance dramatically! All without writing one line of JavaScript."
+      chart_components:
+        title: "Chart.js components accessible in pure Ruby"
+        text_1: "Want to visualize some data in charts? Matestack UI integrates chart.js and allows you to use chart components in pure Ruby without thinking of the JavaScript side!"
+        text_2: "Choose from `line`, `doughnut`, `bar` or `pie` charts and use theme colors for consistent coloring of datasets without touching CSS."
+      smart_collections_table:
+        title: "Reactive, paginated, filterable tables, without the JavaScript hussle"
+        text_1: "Implementing a paginated, filterable collection is exhausting. And what about a reactivity when switching through the pages in order to avoid full page reloads? You don't want to build that yourself! That's why we've created the `collection` component, shipped within matestack-ui-core. The `smart_collection` shipped with `matestack-ui` gives you even more:"
+        text_2: "A few lines of Ruby is enough to add a styled, reactive paginated table with filters to your UI! You can optionally modify column rendering and per-row actions via method injection."
+      smart_collections_card:
+        title: "Customized collection rendering, if tables are not enough"
+        text_1: "You like, what the `smart_collection` does, but want to render something different than a table? No worries: you can inject your very own method, rendering the collection items."
+        text_2: "In this example we're using our own `collection_rendering` method in order to render cards in a grid rather than displaying a table. All other features of a `smart_collections` are still working."
       smart_forms:
         title: "Reactive forms in no time"
         text_1: "Matestack's core library already ships reactive forms, used with pure Ruby. Within matestack-ui you get styled form component, enabling you to create beautiful, reactive forms with a few lines of Ruby!"
         text_2: "Create styled forms, with reactive error/success rendering without thinking of any implementation detail!"
       bootstrap_components:
-        title: "All Bootstrap components, available in pure Ruby"
-        text_1: "Alongside smart components, matestack-ui ships all Bootstrap components enabling you to use them in pure Ruby."
-        text_2: "Imagine adding a Bootstrap card component within one line of Ruby while still beeing able to use all core components, Bootstrap's utility classes or custom CSS. That means you're able to use Bootstrap components with a high level of abstraction for maximum productivity right next to core components like 'div' with a lower level of abstraction for maximum flexibility!"
-        text_3: "On top of that, you're able to use all kinds of methods in order to render your UI based on conditions like 'current_user.is_super_admin?' for example. Adjusting the UI to your custom rules based on pure Ruby is super easy. That's what we call 'flexible abstraction'!"
+        title: "All Bootstrap v5 components, available in pure Ruby"
+        text_1: "Alongside smart components, `matestack-ui` ships all Bootstrap v5 components enabling you to use them in pure Ruby."
+        text_2: "Imagine adding a Bootstrap `card` component within one line of Ruby, skipping recreating the required DOM structures again and again? Mix that with Matestack's core components, Bootstrap's utility classes or custom CSS for customized UI implementation. That means you're able to use Bootstrap and Matestack UI components with a high level of abstraction for maximum productivity right next to core components like `div` with a lower level of abstraction for maximum flexibility!"
+        text_3: "On top of that, you're able to use all kinds of methods in order to render your UI based on conditions like `current_user.is_super_admin?`. Adjusting the UI to your custom rules based on pure Ruby is super easy. That's what we call `flexible abstraction`!"
       pricing:
         title: "Pricing"
         request_qa: "Request your personal Q/A session"
