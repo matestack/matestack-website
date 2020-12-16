@@ -172,7 +172,7 @@ en:
             price_per_month: "99 $/month"
           business:
             title: "Business"
-            description: "You use Matestack in your business in a team of 11-20 developers and can imagine how matestack's support and extendend guides would provide greate value to your team. With this tear you get:"
+            description: "You use Matestack in your business in a team of 11-20 developers and can imagine how matestack's support and extendend guides would provide greate value to your team. With this tier you get:"
             included_items:
               - "Everything from \"Startup\""
               - "Medium sized logo on GitHub project page & this website"
