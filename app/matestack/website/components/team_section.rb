@@ -38,8 +38,12 @@ class Website::Components::TeamSection < Matestack::Ui::Component
           heading size: 5, text: infos[:name]
           small text: infos[:role]
           br
-          small text: infos[:twitter_handle]
-          br times: 2
+          if infos[:twitter_handle]
+            link path: "https://twitter.com/#{infos[:twitter_handle]}", target: "_blank" do
+              small text: infos[:twitter_handle]
+            end
+            br times: 2
+          end
           # small text: infos[:description]
         end
       end

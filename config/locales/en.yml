@@ -208,23 +208,23 @@ en:
       text: "We would love to help you succeed with our technology. We can help you in various ways."
       book_cta_text: "Book now"
       service_types:
-        title: "Our services around Rails and Matestack:"
+        title: "My services around Rails and Matestack:"
         types:
           workshop:
             title: "Workshop"
-            description: "You'd like to start using Matestack in your business, but need help to get things going and bring your team up to speed? We're there for you!"
+            description: "You'd like to start using Matestack in your business, but need help to get things going and bring your team up to speed? I'm there for you!"
           support:
             title: "Support on demand"
-            description: "You're already using Matestack but need support on specific issues? Just book our experts to help you out efficiently!"
+            description: "You're already using Matestack but need support on specific issues? Just hire me to help you out efficiently!"
           development:
             title: "Development on demand"
-            description: "You want us to join your development team for some time? Great Idea! We are happy to work on your projects! Just Ruby/Rails or Matestack on top. You decide!"
+            description: "You want me to join your development team for some time? Great Idea! I'm happy to work on your projects! Just Ruby/Rails or Matestack on top. You decide!"
           refactoring:
             title: "Refactoring"
-            description: "You need us to refactor some bulky legacy views and turn them into future proof, maintainable Ruby code? We love this challenge!"
+            description: "You need me to refactor some bulky legacy views and turn them into future proof, maintainable Ruby code? I love this challenge!"
           turnkey:
             title: "Turnkey applications"
-            description: "Concept and fundig are there, and you \"only\" need developers/a development team to build the applications? Our Ruby experts are more than happy to do so! Both handover and ongoing support possible."
+            description: "Concept and fundig are there, and you \"only\" need developers/a development team to build the applications? I'm more than happy to do so! Both handover and ongoing support possible. If necessary I can team up with my partner in order to provide more ressources!"
     team:
       title: "A team full of mates ready to boost your productivity"
       core_contributors: "+27 core contributors"
@@ -234,17 +234,17 @@ en:
           img_path: "team/jonas.png"
           name: "Jonas Jabari"
           twitter_handle: "@jonasjabari"
-          role: "Senior Ruby/JavaScript developer, creator and CEO of matestack"
+          role: "Senior Ruby/JavaScript developer, creator and founder of matestack"
           description: "\"While being a solo developer, I often struggled with the growing complexity of web development. I created Matestack to get things done easier, faster and more sustainable. After some time, I decided to publish my work and now look forward to grow this project through open source!\""
         nils:
           name: "Nils Henning"
           img_path: "team/nils.png"
-          role: "Senior Ruby/JavaScript developer, Matestack core development"
+          role: "Partner, Senior Ruby/JavaScript developer"
           description: "tbd"
         pascal:
           name: "Pascal Wengerter"
           img_path: "team/pascal.png"
-          role: "Ruby developer, community management"
+          role: "Partner, Ruby developer"
           description: "tbd"
         andreas:
           name: "Andreas Eiselt"
@@ -383,8 +383,8 @@ en:
   services:
     hero:
       title_1: "Let's succeed together"
-      title_2: "Based in Germany, we're there for you wherever you are!"
-      text_1: "We would love to help you with our expertise around Ruby, JavaScript, Rails, Vue.js, Docker, Testing, CI... and of course: Matestack. You decide if you just need specific support or if we should build whole applications for you. Just Ruby/Rails or Matestack on top!"
+      title_2: "Based in Germany, I'm there for you wherever you are!"
+      text_1: "I would love to help you with my expertise around Ruby, JavaScript, Rails, Vue.js, Docker, Testing, CI... and of course: Matestack. You decide if you just need specific support or if I should build whole applications for you. Just Ruby/Rails or Matestack on top! If necessary, I team up with my partners providing you the ressources you need for your project!"
       text_2: "Revenue will be reinvested to fund ongoing Matestack core development, documentation and maintanance."
     case_studies:
       title: "Some of Matestack's projects:"
