@@ -23,7 +23,8 @@ module Website::Components::Registry
     website_getting_started_section: Website::Components::GettingStartedSection,
     website_newsletter_section: Website::Components::NewsletterSection,
     website_legal_imprint: Website::Components::Legal::Imprint,
-    website_legal_privacy: Website::Components::Legal::Privacy
+    website_legal_privacy: Website::Components::Legal::Privacy,
+    website_videos_section: Website::Components::VideosSection
   )
 
   Matestack::Ui::Core::Component::Registry.register_components(

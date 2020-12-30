@@ -10,13 +10,17 @@ class Website::Pages::OpenSource < Matestack::Ui::Page
         img_url: asset_pack_url('media/images/matestack-software.png')
     end
     div class: "container" do
+      website_videos_section
+      website_features_section
+    end
+    div class: "container" do
       website_components_examples_section
     end
     async defer: true, id: "deferred-content" do
       div class: "container" do
         website_reactivty_examples_section
         website_spa_examples_section
-        website_features_section
+
         website_support_section
       end
       div class: "container-fluid px-0" do

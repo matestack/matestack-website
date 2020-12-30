@@ -146,7 +146,11 @@ en:
     support:
       icon: "matestack-maintenance.png"
       title: "Sustainable open source"
-      text: "Matestack's core libraries are free and open source - and sustainable open source development requires proper funding. We therefore offer extenden in-depth guides and premium support in order to allow a growing team to work on Matestack fulltime."
+      text: "Matestack's core libraries are free and open source - and sustainable open source development requires proper funding. I therefore offer extended in-depth guides, premium support and the Matestack UI addon to GitHub sponsors in order to allow me and potentially a small team to work on Matestack fulltime."
+      addon:
+        title: "Matestack UI Addon"
+        text: "If you like what you saw until now, you might be interested in using the UI addon. <code>matestack-ui-core</code> ships pure functionality without any styles. On top of that, the UI addon <code>matestack-ui</code> ships styled components and app templates enabling you to rapidly create beautiful admin or application UIs. If you’re curious how that looks like, just click the link below!"
+        learn_more_cta: "Learn more"
       sponsoring_tiers:
         title: "GitHub sponsoring:"
         tiers:
@@ -160,6 +164,7 @@ en:
             description: "You use Matestack as a solo developer and want even more sugar. With this tier you get:"
             included_items:
               - "Access to a private Discord channel"
+              - "Access to the Matestack UI addon"
               - "Access to advanced in-depth guides (coming soon)"
             price_per_month: "19 $/month"
           startup:
@@ -172,7 +177,7 @@ en:
             price_per_month: "99 $/month"
           business:
             title: "Business"
-            description: "You use Matestack in your business in a team of 11-20 developers and can imagine how matestack's support and extendend guides would provide greate value to your team. With this tear you get:"
+            description: "You use Matestack in your business in a team of 11-20 developers and can imagine how matestack's support and extendend guides would provide greate value to your team. With this tier you get:"
             included_items:
               - "Everything from \"Startup\""
               - "Medium sized logo on GitHub project page & this website"
@@ -252,15 +257,15 @@ en:
       weekly_qa_1: "Q/A Session Tuesday 10 AM CET"
       weekly_qa_2: "Q/A Session Thursday 6 PM CET"
       getting_started_cta: "Getting started"
-      github_stars: "400+"
+      github_stars: "450+"
       github_stars_text: "GitHub Stars"
-      version: "1.2.0"
+      version: "1.3.1"
       version_text: "Version"
       licencse: "LGPLv3"
       licencse_text: "License"
     newsletter:
       title: "Sign up to our newsletter"
-      description: "We occasionally will send you news about updates on our technology, new content and related information. Your data will only be stored on our servers without any thirdparty service involved!"
+      description: "I occasionally will send you news about updates on our technology, new content and related information. Your data will only be stored on Matestack's servers without any thirdparty service involved!"
       form:
         title: "Want to keep updated?"
         name_label: "Name"
@@ -276,13 +281,13 @@ en:
       text_2: "Just like Matestack's core library <code>matestack-ui-core</code>, the addon library <code>matestack-ui</code> can be seamlessly integrated on top of existing controllers, models, routes and authentication/authorisation policies. Use solid UI abstraction while not compromising on the flexibility you need to drive your business!"
     bootstrap:
       access:
-        text_1: "Matestack UI provides extra value on top of our open source project and is available for 990€/year."
-        text_2: "You will get a key which can be used in your Gemfile in order to install the gem. It is not billed per project or developer."
+        text_1: "Matestack UI provides extra value on top of the open source project and is available for GitHub sponsors."
+        text_2: "You will get a key which can be used in your Gemfile in order to install the gem."
         cta: "Get it now!"
       preview:
         title: "Live Preview"
-        text_1: "Below you find a link to a dummy application built with matestack-ui. Heads up: That's an early release under heavy development!"
-        cta: "See what you can build with matestack-ui"
+        text_1: "Below you find a link to a dummy application built with matestack-ui."
+        cta: "Check it out!"
       features:
         progressive:
           icon: "matestack-code.png"
@@ -326,7 +331,7 @@ en:
         text_2: "Imagine adding a Bootstrap `card` component within one line of Ruby, skipping recreating the required DOM structures again and again? Mix that with Matestack's core components, Bootstrap's utility classes or custom CSS for customized UI implementation. That means you're able to use Bootstrap and Matestack UI components with a high level of abstraction for maximum productivity right next to core components like `div` with a lower level of abstraction for maximum flexibility!"
         text_3: "On top of that, you're able to use all kinds of methods in order to render your UI based on conditions like `current_user.is_super_admin?`. Adjusting the UI to your custom rules based on pure Ruby is super easy. That's what we call `flexible abstraction`!"
       pricing:
-        title: "Pricing"
+        title: "Available for GitHub Sponsors"
         request_qa: "Request your personal Q/A session"
         tiers:
           core:
@@ -354,11 +359,11 @@ en:
               - "All Bootstrap v5 components available in pure Ruby"
               - "Growing library of additional components (Kanban Board, Devise Components...)"
               - "Priorized Support via private Discord channel"
-            price: "990 €/year - Get your key now!"
-            cta_link: "mailto: jonas@matestack.io"
+            price: "Available for GitHub sponsors"
+            cta_link: "https://github.com/sponsors/matestack"
           onboarding_package:
             title: "Onboarding Service"
-            description: "You'd like to start using Matestack UI in your business, but need help to get things going and bring your team up to speed? We're there for you!"
+            description: "You'd like to start using Matestack UI in your business, but need help to get things going and bring your team up to speed? I'm there for you!"
             included_items:
               - "Personal workshop for your team"
               - "Migrate existing apps to Matestack UI including team onboarding"
@@ -367,7 +372,7 @@ en:
             cta_link: "mailto: jonas@matestack.io"
           custom_component_dev:
             title: "Custom Component Development"
-            description: "You need a component which is not available yet? Matestack can be extended without limitation. We create the missing component for you on a discounted price, if we're allowed to provide the new component to all Matestack users."
+            description: "You need a component which is not available yet? Matestack can be extended without limitation. I create the missing component for you on a discounted price, if I'm allowed to provide the new component to all Matestack users."
             included_items:
               - "Requirements engineering"
               - "Component development"
@@ -382,7 +387,7 @@ en:
       text_1: "We would love to help you with our expertise around Ruby, JavaScript, Rails, Vue.js, Docker, Testing, CI... and of course: Matestack. You decide if you just need specific support or if we should build whole applications for you. Just Ruby/Rails or Matestack on top!"
       text_2: "Revenue will be reinvested to fund ongoing Matestack core development, documentation and maintanance."
     case_studies:
-      title: "Some of our projects:"
+      title: "Some of Matestack's projects:"
       abc:
         title: "Booking system for ABC workspaces"
         category: "Turnkey application, web app"

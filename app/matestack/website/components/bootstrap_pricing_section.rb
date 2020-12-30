@@ -14,7 +14,7 @@ class Website::Components::BootstrapPricingSection < Matestack::Ui::Component
         div class: 'offset-md-3 col-sm-6 pt-5 text-center' do
           heading size: 4, class: "mt-5", text: t("addons.bootstrap.pricing.title")
           link path: "mailto: jonas@matestack.io" do
-            button class: "btn btn-secondary mt-2", text: t("addons.bootstrap.pricing.request_qa")
+            button class: "btn btn-secondary mt-3", text: t("addons.bootstrap.pricing.request_qa")
           end
         end
       end

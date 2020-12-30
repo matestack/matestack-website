@@ -11,8 +11,32 @@ class Website::Components::SupportSection < Matestack::Ui::Component
 
     div class: "container" do
       div class: 'row' do
+        div class: 'col pt-5 text-center' do
+          heading size: 3, class: "mt-5 mb-3", text: t("landing_page.support.title")
+          paragraph text: t("landing_page.support.text")
+        end
+      end
+
+      div class: 'row justify-content-center mb-5' do
+        div class: 'col-xl-6 pt-5 text-center' do
+          heading size: 5, text: t("landing_page.support.addon.title"), class: "text-muted"
+          paragraph class: "mt-4" do
+            plain t("landing_page.support.addon.text").html_safe
+          end
+          link path: "https://ui.matestack.io", target: "_blank" do
+            img class: "mt-5 w-75 shadow rounded-lg", path: asset_pack_url('media/images/matestack-ui-bootstrap/admin-templates.png')
+          end
+          div class: "mt-3" do
+            transition path: addons_path, delay: 300 do
+              button class: "btn btn-secondary mt-2", text: t("landing_page.support.addon.learn_more_cta")
+            end
+          end
+        end
+      end
+
+      div class: 'row' do
         div class: 'offset-md-3 col-sm-6 pt-5 text-center' do
-          heading size: 4, class: "mt-5", text: t("landing_page.support.sponsoring_tiers.title")
+          heading size: 5, class: "text-muted", text: t("landing_page.support.sponsoring_tiers.title")
         end
       end
       div class: 'row mt-5 justify-content-center' do
