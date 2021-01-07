@@ -10,7 +10,9 @@ class Website::Components::Layout::Footer < Matestack::Ui::Component
             end
           end
           div class: "col-lg-6 pt-5 py-5 pt-lg-2 text-center text-lg-right" do
-            plain t('footer.copyright_notice')
+            link path: "https://jonasjabari.dev", target: "_blank" do
+              plain t('footer.jonasjabari_link_text')
+            end
             plain "|"
             transition path: :imprint_path, delay: 300 do
               plain t('footer.imprint_link_text')

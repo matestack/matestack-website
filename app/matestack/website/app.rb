@@ -8,10 +8,7 @@ class Website::App < Matestack::Ui::App
           button id: "top-nav-btn", class: 'btn btn-sm btn-secondary btn-group-start ', text: "Open Source"
         end
         transition path: addons_path, delay: 300 do
-          button id: "top-nav-btn", class: 'btn btn-sm btn-secondary btn-group-middle', text: "UI Addon"
-        end
-        transition path: services_path, delay: 300 do
-          button id: "top-nav-btn",class: 'btn btn-sm btn-secondary btn-group-end', text: "Dev Services"
+          button id: "top-nav-btn", class: 'btn btn-sm btn-secondary btn-group-end', text: "UI Addon"
         end
       end
     end

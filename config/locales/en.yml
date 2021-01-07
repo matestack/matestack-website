@@ -37,7 +37,7 @@ en:
       docs: "Documentation"
       discord: "Discord Chat"
   footer:
-    copyright_notice: "© 2020 Matestack GmbH"
+    jonasjabari_link_text: "created by Jonas Jabari"
     imprint_link_text: "Imprint"
     privacy_policy_link_text: "Privacy policy"
   example_slides:
@@ -264,15 +264,15 @@ en:
       licencse: "LGPLv3"
       licencse_text: "License"
     newsletter:
-      title: "Sign up to our newsletter"
-      description: "I occasionally will send you news about updates on our technology, new content and related information. Your data will only be stored on Matestack's servers without any thirdparty service involved!"
+      title: "Sign up to Matestack's newsletter"
+      description: "I occasionally will send you news about updates on Matestack's technology, new content and related information. Your data will only be stored on Matestack's servers without any thirdparty service involved!"
       form:
         title: "Want to keep updated?"
         name_label: "Name"
         email_label: "Email"
         submit_text: "submit"
         success_heading: "Subscription requested!"
-        success_description: "Please confirm your subscription using the link given in the email we just sent you."
+        success_description: "Please confirm your subscription using the link given in the email just beeing sent you."
   addons:
     hero:
       title_1: "Create beautiful, flexible Application & Admin UIs in pure Ruby"
