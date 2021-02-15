@@ -1,4 +1,4 @@
-class Website::Pages::Addons < Matestack::Ui::Page
+class Website::Pages::Bootstrap < Matestack::Ui::Page
 
   def response
     div class: "container" do
@@ -13,7 +13,7 @@ class Website::Pages::Addons < Matestack::Ui::Page
       website_bootstrap_preview_section
       website_bootstrap_description_section
       website_bootstrap_features_section
-      website_bootstrap_pricing_section
+      website_overview_section
       # website_addons_section
       # website_indepth_guides_section
     end

@@ -5,12 +5,12 @@
 class MyAdmin::Components::Dashboard::Products < Matestack::Ui::Component
 
   def response
-    section_card title: t("..."), subtitle: t("...") do
-      row do
-        col xl: 6 do
+    bs_section_card title: t("..."), subtitle: t("...") do
+      bs_row do
+        bs_col xl: 6 do
           text_kpis_partial
         end
-        col xl: 6, class: "py-3" do
+        bs_col xl: 6, class: "py-3" do
           chart_kpis_partial
         end
       end
@@ -22,7 +22,7 @@ class MyAdmin::Components::Dashboard::Products < Matestack::Ui::Component
     # ...
 
     def chart_kpis_partial
-      chart type: :doughnut,
+      bs_chart type: :doughnut,
         datasets: [
           {
             data: top_5_product_values,

@@ -1,25 +1,25 @@
-class Website::Components::BootstrapPricingSection < Matestack::Ui::Component
+class Website::Components::OverviewSection < Matestack::Ui::Component
 
   def response
-    section class: "bootstrap-pricing-section pb-5", id: "pricing" do
-      pricing_tiers
+    section class: "overview-section pb-5", id: "pricing" do
+      offers_partial
     end
   end
 
-  def pricing_tiers
-    tiers = t("addons.bootstrap.pricing.tiers")
+  def offers_partial
+    offers = t("landing_page.overview.offers")
 
     div class: "container" do
       div class: 'row' do
         div class: 'offset-md-3 col-sm-6 pt-5 text-center' do
-          heading size: 4, class: "mt-5", text: t("addons.bootstrap.pricing.title")
-          link path: "mailto: jonas@matestack.io" do
-            button class: "btn btn-secondary mt-3", text: t("addons.bootstrap.pricing.request_qa")
-          end
+          heading size: 4, class: "mt-5", text: t("landing_page.overview.title")
+          # link path: "mailto: jonas@matestack.io" do
+          #   button class: "btn btn-secondary mt-3", text: t("landing_page.overview.request_qa")
+          # end
         end
       end
       div class: 'row mt-5 justify-content-center' do
-        tiers.each do |tier_name, tier_attributes|
+        offers.each do |tier_name, tier_attributes|
           tier_card tier_attributes
         end
       end

@@ -1,4 +1,4 @@
-class Website::Pages::OpenSource < Matestack::Ui::Page
+class Website::Pages::Core < Matestack::Ui::Page
 
   def response
     div class: "container" do
@@ -21,6 +21,8 @@ class Website::Pages::OpenSource < Matestack::Ui::Page
         website_reactivty_examples_section
         website_spa_examples_section
 
+        website_bootstrap_section
+        website_overview_section
         website_support_section
       end
       div class: "container-fluid px-0" do

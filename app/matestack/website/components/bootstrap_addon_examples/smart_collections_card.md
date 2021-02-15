@@ -6,8 +6,8 @@ class MyAdmin::Pages::Products::Index < Matestack::Ui::Page
 
   def response
     # ...
-    section_card do
-      smart_collection collection_config
+    bs_section_card do
+      bs_smart_collection collection_config
     end
     # ...
   end
@@ -32,9 +32,9 @@ class MyAdmin::Pages::Products::Index < Matestack::Ui::Page
 
   def collection_rendering products
     slot do
-      row do
+      bs_row do
         products.each do |product|
-          col xl: 4, class: "mb-3" do
+          bs_col xl: 4, class: "mb-3" do
             collection_card product
           end
         end
@@ -43,16 +43,16 @@ class MyAdmin::Pages::Products::Index < Matestack::Ui::Page
   end
 
   def collection_card product
-    card title: product.name, subtitle: "#{product.price_in_euro} €", class: "h-100" do
+    bs_card title: product.name, subtitle: "#{product.price_in_euro} €", class: "h-100" do
       paragraph class: "fw-lighter", text: product.description
       transition path: edit_dummy_product_path(product), delay: 300 do
-        btn outline: true, size: :sm, variant: :primary do
-          bootstrap_icon name: 'arrow-right', size: 20
+        bs_btn outline: true, size: :sm, variant: :primary do
+          bs_icon name: 'arrow-right', size: 20
         end
       end
       action product_delete_action_config(product) do
-        btn outline: true, size: :sm, variant: :danger do
-          bootstrap_icon name: 'trash2', size: 20
+        bs_btn outline: true, size: :sm, variant: :danger do
+          bs_icon name: 'trash2', size: 20
         end
       end
     end

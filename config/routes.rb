@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  root to: 'website#open_source'
+  root to: 'website#core'
 
-  get '/addons', to: 'website#addons'
+  get '/addons', to: redirect('/bootstrap')
+  get '/bootstrap', to: 'website#bootstrap'
   get '/services', to: 'website#services'
 
   get '/imprint', to: 'website#imprint'

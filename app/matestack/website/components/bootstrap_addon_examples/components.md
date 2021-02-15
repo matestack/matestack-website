@@ -5,10 +5,10 @@
 class MyAdmin::Pages::Customer::Index < Matestack::Ui::Page
 
   def response
-    container do
-      row do
+    bs_container do
+      bs_row do
         Customer.last(6).each do |customer|
-          col sm: 4, class: "mt-3" do
+          bs_col sm: 4, class: "mt-3" do
             card_for(customer)
           end
         end
@@ -17,7 +17,7 @@ class MyAdmin::Pages::Customer::Index < Matestack::Ui::Page
   end
 
   def card_for customer
-    card title: customer.name, img_path: asset_pack_url('.../xyz.png'), class: "shadow-sm" do
+    bs_card title: customer.name, img_path: asset_pack_url('.../xyz.png'), class: "shadow-sm" do
       card_body_for(customer)
     end
   end
@@ -29,7 +29,7 @@ class MyAdmin::Pages::Customer::Index < Matestack::Ui::Page
     end
     if current_user.is_super_admin?
       transition path: form_path(id: customer.id) do
-        btn size: :sm, text: "edit", class: "mt-3"
+        bs_btn size: :sm, text: "edit", class: "mt-3"
       end
     end
   end

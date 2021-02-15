@@ -4,12 +4,12 @@ class WebsiteController < ApplicationController
 
   matestack_app Website::App
 
-  def open_source
-    render Website::Pages::OpenSource
+  def core
+    render Website::Pages::Core
   end
 
-  def addons
-    render Website::Pages::Addons
+  def bootstrap
+    render Website::Pages::Bootstrap
   end
 
   def services

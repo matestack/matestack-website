@@ -19,13 +19,8 @@ class Website::Components::GettingStartedSection < Matestack::Ui::Component
     div class: 'row mx-0 mb-5 justify-content-center' do
       div class: 'col-sm-3 pt-5 text-center text-sm-right' do
         link path: "https://discord.gg/c6tQxFG", target: "_blank" do
-          button class: "btn btn-secondary small-padding", text: t("landing_page.getting_started.weekly_qa_1")
+          button class: "btn btn-secondary small-padding", text: t("landing_page.getting_started.qa_via_discord")
         end
-        br times: 2
-        link path: "https://discord.gg/c6tQxFG", target: "_blank" do
-          button class: "btn btn-secondary small-padding", text: t("landing_page.getting_started.weekly_qa_2")
-        end
-        br times: 2
         link path: "https://docs.matestack.io" do
           button class: "btn btn-primary small-padding", text: t("landing_page.getting_started.getting_started_cta")
         end
@@ -42,13 +37,13 @@ class Website::Components::GettingStartedSection < Matestack::Ui::Component
               small text: t("landing_page.getting_started.github_stars_text")
             end
           end
-          div class: "detail w-25" do
-            link path: "https://github.com/matestack/matestack-ui-core" do
-              small text: t("landing_page.getting_started.version_text")
-              br
-              small text: t("landing_page.getting_started.version")
-            end
-          end
+          # div class: "detail w-25" do
+          #   link path: "https://github.com/matestack/matestack-ui-core" do
+          #     small text: t("landing_page.getting_started.version_text")
+          #     br
+          #     small text: t("landing_page.getting_started.version")
+          #   end
+          # end
           div class: "detail w-25" do
             link path: "https://github.com/matestack/matestack-ui-core" do
               small text: t("landing_page.getting_started.licencse")

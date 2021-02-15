@@ -5,10 +5,10 @@ class Website::App < Matestack::Ui::App
     nav class: "text-center mb-3", attributes: { style: "margin-top: 120px" } do
       div class: "btn-group", role: "group" do
         transition path: root_path, delay: 300 do
-          button id: "top-nav-btn", class: 'btn btn-sm btn-secondary btn-group-start ', text: "Open Source"
+          button id: "top-nav-btn", class: 'btn btn-sm btn-secondary btn-group-start ', text: "matestack-ui-core"
         end
-        transition path: addons_path, delay: 300 do
-          button id: "top-nav-btn", class: 'btn btn-sm btn-secondary btn-group-end', text: "UI Addon"
+        transition path: bootstrap_path, delay: 300 do
+          button id: "top-nav-btn", class: 'btn btn-sm btn-secondary btn-group-end', text: "matestack-ui-bootstrap"
         end
       end
     end

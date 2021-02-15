@@ -2,11 +2,11 @@
 
 ```ruby
 
-class MyAdmin::App < Matestack::Ui::Apps::AdminTemplate
+class MyAdmin::App < Matestack::Ui::Bootstrap::Apps::AdminTemplate
 
   # the response method is defined by the parent class
   # you just need to pass in some configuration using the methods below
-  # it's still possible to overwrite and adjust the response
+  # it's still possible to overwrite and adjust the response method
   # defined in the parent class
 
   def sidebar_top_partial
@@ -16,7 +16,7 @@ class MyAdmin::App < Matestack::Ui::Apps::AdminTemplate
       end
     end
     div class: "text-center my-5" do
-      avatar img_path: asset_pack_url('media/images/avatar-placeholder.png')
+      bs_avatar img_path: asset_pack_url('media/images/avatar-placeholder.png')
       div class: "my-3" do
         plain current_admin.email
       end

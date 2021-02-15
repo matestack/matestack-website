@@ -5,12 +5,12 @@
 class MyAdmin::Pages::Dashboard::Show < Matestack::Ui::Page
 
   def response
-    page_heading title: t("dashboard.title"), subtitle: t("dashboard.subtitle")
-    row do
-      col md: 6 do
+    bs_page_heading title: t("dashboard.title"), subtitle: t("dashboard.subtitle")
+    bs_row do
+      bs_col md: 6 do
         analytics_partial
       end
-      col md: 6 do
+      bs_col md: 6 do
         activity_partial
       end
     end
@@ -26,8 +26,8 @@ class MyAdmin::Pages::Dashboard::Show < Matestack::Ui::Page
   end
 
   def activity_partial
-    row do
-      col do
+    bs_row do
+      bs_col do
         async defer: 900, rerender_on: "activity-tracked", id: "activity-card" do
           dashboard_activity
         end

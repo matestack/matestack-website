@@ -113,7 +113,7 @@ en:
       title_1: "Your Rails views reimagined"
       title_2: "Boost your productivity & easily create component based web UIs in pure Ruby."
       title_3: "Reactivity included if desired."
-      text_1: "Matestack provides a collection of open source gems made for Ruby on Rails developers. Matestack enables you to craft maintainable web UIs in pure Ruby, skipping ERB and HTML. UI code becomes a native and fun part of your Rails app. Thanks to reactive core components, reactivity can be optionally added on top without writing JavaScript, just using a simple Ruby DSL."
+      text_1: "Matestack enables Rails developers to craft maintainable web UIs in pure Ruby, skipping ERB and HTML. UI code becomes a native and fun part of your Rails app. Thanks to reactive core components built on top of Vue.js, reactivity can be optionally added on top without writing JavaScript, just using a simple Ruby DSL."
       text_2: "You end up writing 50% less code while increasing productivity, maintainability and developer happiness. Work with pure Ruby. If necessary, extend with pure JavaScript. No Opal involved."
     sub_hero:
       title: "Boost your productivity"
@@ -143,14 +143,15 @@ en:
         icon: "matestack-branches.png"
         title: "Highly extensible"
         text: "Creating custom UI components is as easy as writing Ruby classes or pure Vue.js components"
+    bootstrap:
+      title: "Matestack UI Bootstrap"
+      text: "If you like what you saw until now, you might be interested in using Matestack UI Bootstrap. <code>matestack-ui-core</code> ships pure functionality without any styles. On top of that, the UI addon <code>matestack-ui-bootstrap</code> ships styled components and app templates enabling you to rapidly create beautiful admin or application UIs. If you’re curious how that looks like, just click the link below!"
+      learn_more_cta: "Learn more"
     support:
       icon: "matestack-maintenance.png"
       title: "Sustainable open source"
-      text: "Matestack's core libraries are free and open source - and sustainable open source development requires proper funding. I therefore offer extended in-depth guides, premium support and the Matestack UI addon to GitHub sponsors in order to allow me and potentially a small team to work on Matestack fulltime."
-      addon:
-        title: "Matestack UI Addon"
-        text: "If you like what you saw until now, you might be interested in using the UI addon. <code>matestack-ui-core</code> ships pure functionality without any styles. On top of that, the UI addon <code>matestack-ui</code> ships styled components and app templates enabling you to rapidly create beautiful admin or application UIs. If you’re curious how that looks like, just click the link below!"
-        learn_more_cta: "Learn more"
+      text: "Matestack's libraries are free and open source - and sustainable open source development requires proper funding. I therefore offer early access to in-depth screencasts and Matestack addons and premium support to GitHub sponsors in order to allow me and potentially a small team to work on Matestack fulltime."
+
       sponsoring_tiers:
         title: "GitHub sponsoring:"
         tiers:
@@ -164,8 +165,9 @@ en:
             description: "You use Matestack as a solo developer and want even more sugar. With this tier you get:"
             included_items:
               - "Access to a private Discord channel"
-              - "Access to the Matestack UI addon"
-              - "Access to advanced in-depth guides (coming soon)"
+              - "Personal onboarding and initial Q/A by Jonas (via video call, 1-2 hours)"
+              - "Early, exclusive access to Matestack addons, which will be open source after a while"
+              - "Early, exclusive access to advanced in-depth guides/screencasts, which will be public after a while"
             price_per_month: "19 $/month"
           startup:
             title: "Startup"
@@ -181,7 +183,7 @@ en:
             included_items:
               - "Everything from \"Startup\""
               - "Medium sized logo on GitHub project page & this website"
-              - "1 hour expert consulting per month"
+              - "1 hour additional expert consulting per month"
             price_per_month: "299 $/month"
           enterprise:
             title: "Big Business"
@@ -190,8 +192,56 @@ en:
               - "Everything from \"Startup\""
               - "Large logo on GitHub project page & this website"
               - "Logo & description text in the documentation"
-              - "2 hours expert consulting per month"
+              - "2 hours additional expert consulting per month"
             price_per_month: "499 $/month"
+    overview:
+      title: "Overview"
+      offers:
+        core:
+          title: "Matestack UI Core"
+          description: "Matestack UI Core ships all you need to build reactive UIs in pure Ruby. You have to take care of styling and additional UI components yourself."
+          included_items:
+            - "UI components in pure Ruby"
+            - "Reactive components in pure Ruby"
+            - "Reactive apps in pure Ruby"
+            - "Growing documentation and Youtube Screencasts"
+            - "Community support"
+          price: "Free and Open Source"
+          cta_link: "https://github.com/matestack/matestack-ui-core"
+        ui_addon:
+          title: "Matestack UI Bootstrap"
+          description: "Matestack UI Bootstrap ships all you need to build beautiful, reactive UIs in pure Ruby and smart CRUD components. Don't think about styling anymore and just create admin or application UIs faster than ever before!"
+          included_items:
+            - "Everything included in Matestack UI Core, plus:"
+            - "Admin and application UI templates in pure Ruby"
+            - "Admin and application UI components in pure Ruby"
+            - "Styled, reactive forms in pure Ruby"
+            - "Styled, reactive date/timepicker in pure Ruby"
+            - "Styled, reactive collections in pure Ruby"
+            - "Styled, reactive charts in pure Ruby"
+            - "All Bootstrap v5 components available in pure Ruby"
+            - "Growing library of additional components (Kanban Board, Devise Components...)"
+          price: "Free and Open Source"
+          cta_link: "https://github.com/matestack/matestack-ui-bootstrap"
+        onboarding_package:
+          title: "Onboarding Service"
+          description: "You'd like to start using Matestack in your business, but need help to get things going and bring your team up to speed? I'm there for you!"
+          included_items:
+            - "Personal workshop for your team"
+            - "Migrate existing apps to Matestack including team onboarding"
+            - "Pair programming with your team"
+          price: "120 €/h - Book now!"
+          cta_link: "mailto: jonas@matestack.io"
+        custom_component_dev:
+          title: "Custom Component Development"
+          description: "You need a component which is not available yet? Matestack can be extended without limitation. I create the missing component for you on a discounted price, if I'm allowed to provide the new component to all Matestack users."
+          included_items:
+            - "Requirements engineering"
+            - "Component development"
+            - "Testing and documentation"
+            - "Deploy"
+          price: "120 €/h - Book now!"
+          cta_link: "mailto: jonas@matestack.io"
     addons:
       title: "Add-ons for sponsors"
       text_1: "In addition to our open source projects, we provide our sponsors with various add-ons in order to further increase their productivity."
@@ -256,6 +306,7 @@ en:
       request_help_cta: "Request help"
       weekly_qa_1: "Q/A Session Tuesday 10 AM CET"
       weekly_qa_2: "Q/A Session Thursday 6 PM CET"
+      qa_via_discord: "Q/A via Discord"
       getting_started_cta: "Getting started"
       github_stars: "450+"
       github_stars_text: "GitHub Stars"
@@ -276,12 +327,12 @@ en:
   addons:
     hero:
       title_1: "Create beautiful, flexible Application & Admin UIs in pure Ruby"
-      title_2: "Matestack UI ships styled UI components and smart CRUD tools for maximum productivity"
+      title_2: "Matestack UI Bootstrap ships styled UI components and smart CRUD tools for maximum productivity"
       text_1: "How about putting together prebuilt styled components in pure Ruby rather than configuring something like ActiveAdmin? You can reuse existing security policies and unique business logic while rapidly implementing beautiful admin or application UIs!"
-      text_2: "Just like Matestack's core library <code>matestack-ui-core</code>, the addon library <code>matestack-ui</code> can be seamlessly integrated on top of existing controllers, models, routes and authentication/authorisation policies. Use solid UI abstraction while not compromising on the flexibility you need to drive your business!"
+      text_2: "Just like Matestack's core library <code>matestack-ui-core</code>, the addon library <code>matestack-ui-bootstrap</code> can be seamlessly integrated on top of existing controllers, models, routes and authentication/authorisation policies. Use solid UI abstraction while not compromising on the flexibility you need to drive your business!"
     bootstrap:
       access:
-        text_1: "Matestack UI provides extra value on top of the open source project and is available for GitHub sponsors."
+        text_1: "Matestack UI Bootstrap provides extra value on top of the open source project and is available for GitHub sponsors."
         text_2: "You will get a key which can be used in your Gemfile in order to install the gem."
         cta: "Get it now!"
       preview:
@@ -292,7 +343,7 @@ en:
         progressive:
           icon: "matestack-code.png"
           title: "Progressive integration"
-          text: "Just like matestack-ui-core, easily integrate matestack-ui into existing Rails projects. Integrate bootstrap components step by step."
+          text: "Just like matestack-ui-core, easily integrate matestack-ui-bootstrap into existing Rails projects. Integrate bootstrap components step by step."
         flexible:
           icon: "matestack-ruby.png"
           title: "Flexible abstraction"
@@ -311,7 +362,7 @@ en:
         text_2: "Split rendering of complex, data-intesive UIs with Matestack's core `async` component and increase initial page load performance dramatically! All without writing one line of JavaScript."
       chart_components:
         title: "Chart.js components accessible in pure Ruby"
-        text_1: "Want to visualize some data in charts? Matestack UI integrates chart.js and allows you to use chart components in pure Ruby without thinking of the JavaScript side!"
+        text_1: "Want to visualize some data in charts? Matestack UI Bootstrap integrates chart.js and allows you to use chart components in pure Ruby without thinking of the JavaScript side!"
         text_2: "Choose from `line`, `doughnut`, `bar` or `pie` charts and use theme colors for consistent coloring of datasets without touching CSS."
       smart_collections_table:
         title: "Reactive, paginated, filterable tables, without the JavaScript hussle"
@@ -323,63 +374,14 @@ en:
         text_2: "In this example we're using our own `collection_rendering` method in order to render cards in a grid rather than displaying a table. All other features of a `smart_collections` are still working."
       smart_forms:
         title: "Reactive forms in no time"
-        text_1: "Matestack's core library already ships reactive forms, used with pure Ruby. Within matestack-ui you get styled form component, enabling you to create beautiful, reactive forms with a few lines of Ruby!"
+        text_1: "Matestack's core library already ships reactive forms, used with pure Ruby. Within matestack-ui-bootstrap you get styled form component, enabling you to create beautiful, reactive forms with a few lines of Ruby!"
         text_2: "Create styled forms, with reactive error/success rendering without thinking of any implementation detail!"
       bootstrap_components:
         title: "All Bootstrap v5 components, available in pure Ruby"
         text_1: "Alongside smart components, `matestack-ui` ships all Bootstrap v5 components enabling you to use them in pure Ruby."
-        text_2: "Imagine adding a Bootstrap `card` component within one line of Ruby, skipping recreating the required DOM structures again and again? Mix that with Matestack's core components, Bootstrap's utility classes or custom CSS for customized UI implementation. That means you're able to use Bootstrap and Matestack UI components with a high level of abstraction for maximum productivity right next to core components like `div` with a lower level of abstraction for maximum flexibility!"
+        text_2: "Imagine adding a Bootstrap `card` component within one line of Ruby, skipping recreating the required DOM structures again and again? Mix that with Matestack's core components, Bootstrap's utility classes or custom CSS for customized UI implementation. That means you're able to use Bootstrap and Matestack UI Bootstrap components with a high level of abstraction for maximum productivity right next to core components like `div` with a lower level of abstraction for maximum flexibility!"
         text_3: "On top of that, you're able to use all kinds of methods in order to render your UI based on conditions like `current_user.is_super_admin?`. Adjusting the UI to your custom rules based on pure Ruby is super easy. That's what we call `flexible abstraction`!"
-      pricing:
-        title: "Available for GitHub Sponsors"
-        request_qa: "Request your personal Q/A session"
-        tiers:
-          core:
-            title: "Matestack UI Core"
-            description: "Matestack UI Core ships all you need to build reactive UIs in pure Ruby. You have to take care of styling and additional UI components yourself."
-            included_items:
-              - "UI components in pure Ruby"
-              - "Reactive components in pure Ruby"
-              - "Reactive apps in pure Ruby"
-              - "Growing documentation and Youtube Screencasts"
-              - "Community support"
-            price: "Free and Open Source - Start now!"
-            cta_link: "https://github.com/matestack/matestack-ui-core"
-          ui_addon:
-            title: "Matestack UI Addon"
-            description: "Matestack UI ships all you need to build beautiful, reactive UIs in pure Ruby and smart CRUD components. Don't think about styling anymore and just create admin or application UIs faster than ever before!"
-            included_items:
-              - "Everything included in Matestack UI Core, plus:"
-              - "Admin and application UI templates in pure Ruby"
-              - "Admin and application UI components in pure Ruby"
-              - "Styled, reactive forms in pure Ruby"
-              - "Styled, reactive date/timepicker in pure Ruby"
-              - "Styled, reactive collections in pure Ruby"
-              - "Styled, reactive charts in pure Ruby"
-              - "All Bootstrap v5 components available in pure Ruby"
-              - "Growing library of additional components (Kanban Board, Devise Components...)"
-              - "Priorized Support via private Discord channel"
-            price: "Available for GitHub sponsors"
-            cta_link: "https://github.com/sponsors/matestack"
-          onboarding_package:
-            title: "Onboarding Service"
-            description: "You'd like to start using Matestack UI in your business, but need help to get things going and bring your team up to speed? I'm there for you!"
-            included_items:
-              - "Personal workshop for your team"
-              - "Migrate existing apps to Matestack UI including team onboarding"
-              - "Pair programming with your team"
-            price: "120 €/h - Book now!"
-            cta_link: "mailto: jonas@matestack.io"
-          custom_component_dev:
-            title: "Custom Component Development"
-            description: "You need a component which is not available yet? Matestack can be extended without limitation. I create the missing component for you on a discounted price, if I'm allowed to provide the new component to all Matestack users."
-            included_items:
-              - "Requirements engineering"
-              - "Component development"
-              - "Testing and documentation"
-              - "Deploy"
-            price: "60 €/h (discounted) - Book now!"
-            cta_link: "mailto: jonas@matestack.io"
+
   services:
     hero:
       title_1: "Let's succeed together"

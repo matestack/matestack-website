@@ -6,8 +6,8 @@ class MyAdmin::Pages::Orders::Index < Matestack::Ui::Page
 
   def response
     # ...
-    section_card do
-      smart_collection collection_config
+    bs_section_card do
+      bs_smart_collection collection_config
     end
     # ...
   end
@@ -50,8 +50,8 @@ class MyAdmin::Pages::Orders::Index < Matestack::Ui::Page
   def table_item_actions order
     slot do
       transition path: edit_dummy_order_path(order), delay: 300 do
-        btn outline: true, size: :sm, variant: :primary do
-          bootstrap_icon name: 'arrow-right', size: 20
+        bs_btn outline: true, size: :sm, variant: :primary do
+          bs_icon name: 'arrow-right', size: 20
         end
       end
     end

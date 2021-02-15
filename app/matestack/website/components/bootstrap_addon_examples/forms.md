@@ -8,12 +8,12 @@ class MyAdmin::Components::UsersForm < Matestack::Ui::Component
 
   def response
     form form_config do
-      bootstrap_input   key: :name, type: :text, label: "Name"
-      bootstrap_input   key: :avatar, type: :file, label: "Avatar"
-      bootstrap_select  key: :role, options: [:client, :admin], label: "Role",
+      bs_form_input   key: :name, type: :text, label: "Name"
+      bs_form_input   key: :avatar, type: :file, label: "Avatar"
+      bs_form_select  key: :role, options: [:client, :admin], label: "Role",
                         placeholder: "Select Role"
-      bootstrap_switch  key: :active, label: "Active?"
-      bootstrap_submit  button_variant: :primary, spinner_variant: :light, text: "Submit"
+      bs_form_switch  key: :active, label: "Active?"
+      bs_form_submit  button_variant: :primary, spinner_variant: :light, text: "Submit"
     end
   end
 

@@ -2,13 +2,13 @@ class Website::Components::BootstrapDescriptionSection < Matestack::Ui::Componen
 
   def response
     section class: "bootstrap-description-section" do
+      bootstrap_components_partial
       admin_templates_partial
       page_layout_components_partial
       chart_components_partial
       smart_forms_partial
       smart_collections_table_partial
       smart_collections_card_partial
-      bootstrap_components_partial
     end
   end
 
