@@ -12,7 +12,8 @@ gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 4.0'
+# gem 'webpacker', '~> 4.0'
+gem 'webpacker', '~> 5.x'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -29,8 +30,8 @@ gem 'redis', '~> 4.0'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 # For UI development in pure Ruby
-# 1.0.0 pre release branch
-gem 'matestack-ui-core', '~> 1.0'
+gem 'matestack-ui-core'
+# gem 'matestack-ui-core', :git => "https://github.com/matestack/matestack-ui-core", :branch => 'next_release'
 
 # for markdown usage
 gem 'redcarpet'
