@@ -7,7 +7,7 @@ class MyAdmin::Components::UsersForm < Matestack::Ui::Component
   requires :user
 
   def response
-    form form_config do
+    matestack_form form_config do
       bs_form_input   key: :name, type: :text, label: "Name"
       bs_form_input   key: :avatar, type: :file, label: "Avatar"
       bs_form_select  key: :role, options: [:client, :admin], label: "Role",

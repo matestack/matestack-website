@@ -312,7 +312,7 @@ en:
       github_stars_text: "GitHub Stars"
       version: "1.3.2"
       version_text: "Version"
-      licencse: "LGPLv3"
+      licencse: "MIT"
       licencse_text: "License"
     newsletter:
       title: "Sign up to Matestack's newsletter"
@@ -337,7 +337,7 @@ en:
         cta: "Get it now!"
       preview:
         title: "Live Preview"
-        text_1: "Below you find a link to a dummy application built with matestack-ui."
+        text_1: "Below you find a link to a dummy application built with matestack-ui-bootstrap."
         cta: "Check it out!"
       features:
         progressive:

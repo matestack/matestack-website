@@ -10,21 +10,19 @@ class Components::Card < Matestack::Ui::Component
 
   def response
     div class: "card shadow-sm border-0 bg-light" do
-      img path: image, class: "w-100" if image.present?
-      card_body slots: { heading: heading_slot, body: body_slot }
+      img path: context.image, class: "w-100" if context.image.present?
+      Components::CardBody.(slots: {
+        heading: method(:heading_slot), body: method(:body_slot)
+      })
     end
   end
 
   def heading_slot
-    slot do
-      heading size: 5, text: title if title.present?
-    end
+    h5 context.title if context.title.present?
   end
-  
+
   def body_slot
-    slot do
-      paragraph class: "card-text", text: body
-    end
+    paragraph context.body, class: "card-text"
   end
 
 end
@@ -43,10 +41,10 @@ class Components::CardBody < Matestack::Ui::Component
     # a more complex structure
     div class: "card-body" do
       div class: "heading-section" do
-        slot slots[:heading]
+        slot :heading
       end
       div class: "body-section" do
-        slot slots[:body]
+        slot :body
       end
     end
   end

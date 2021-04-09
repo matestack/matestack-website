@@ -1,6 +1,9 @@
 class Website::Pages::Core < Matestack::Ui::Page
 
   def response
+    button text: 1
+    button text: 2
+    button text: 3
     div class: "container" do
       website_hero_section title_1: t("landing_page.hero.title_1"),
         title_2: t("landing_page.hero.title_2"),

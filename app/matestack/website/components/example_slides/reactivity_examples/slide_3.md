@@ -9,11 +9,9 @@ class Components::SomeComponent < Matestack::Ui::Component
   end
 
   def response
-    form my_form_config do
+    matestack_form my_form_config do
       form_input key: :some_attribute, type: :text
-      form_submit do
-        button text: "click me"
-      end
+      button text: "click me", type: :submit
     end
     toggle show_on: "submitted", hide_after: 5000 do
       span class: "message success" do

@@ -44,7 +44,7 @@ class MyAdmin::Pages::Products::Index < Matestack::Ui::Page
 
   def collection_card product
     bs_card title: product.name, subtitle: "#{product.price_in_euro} €", class: "h-100" do
-      paragraph class: "fw-lighter", text: product.description
+      paragraph product.description, class: "fw-lighter"
       transition path: edit_dummy_product_path(product), delay: 300 do
         bs_btn outline: true, size: :sm, variant: :primary do
           bs_icon name: 'arrow-right', size: 20

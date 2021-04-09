@@ -6,7 +6,7 @@ class Components::SomeComponent < Matestack::Ui::Component
 
   def response
     onclick emit: "some_event" do
-      button text: "click me"
+      button "click me"
     end
     toggle show_on: "some_event", hide_after: 5000 do
       plain "Oh yes! You clicked me!"

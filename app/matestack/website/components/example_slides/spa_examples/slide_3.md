@@ -7,23 +7,21 @@ class SomeApp::App < Matestack::Ui::App
   def response
     nav do
       transition path: page1_path do
-        button text: "Page 1"
+        button "Page 1"
       end
       transition path: page2_path do
-        button text: "Page 2"
+        button "Page 2"
       end
     end
     main do
       div class: "container" do
-        yield_page slots: { loading_state: loading_state_element }
+        yield
       end
     end
   end
 
   def loading_state_element
-    slot do
-      div class: 'some-loading-element-styles'
-    end
+    div class: 'some-loading-element-styles'
   end
 
 end

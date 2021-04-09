@@ -11,16 +11,16 @@ class Components::Card < Matestack::Ui::Component
 
   def response
     div class: "card shadow-sm border-0 bg-light" do
-      img path: image, class: "w-100" if image.present?
+      img path: context.image, class: "w-100" if context.image.present?
       card_content
-      card_footer if footer.present?
+      card_footer if context.footer.present?
     end
   end
 
   def card_content
     div class: "card-body" do
-      heading size: 5, text: title if title.present?
-      paragraph class: "card-text", text: body
+      h5 context.title if context.title.present?
+      paragraph context.body, class: "card-text"
     end
   end
 
@@ -38,6 +38,6 @@ end
 
 ```erb
 <!-- some other erb markup -->
-<%= matestack_component :blue_card, title: "hello", body: "world", footer: "foo" %>
+<%= Components::Card.(title: "hello", body: "world", footer: "foo") %>
 <!-- some other erb markup -->
 ```

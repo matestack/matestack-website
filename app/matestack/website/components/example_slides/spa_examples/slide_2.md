@@ -4,8 +4,7 @@
 
 class SomeController < ApplicationController
 
-  include Matestack::Ui::Core::ApplicationHelper
-  include Components::Registry
+  include Matestack::Ui::Core::Helper
 
   matestack_app SomeApp::App
 

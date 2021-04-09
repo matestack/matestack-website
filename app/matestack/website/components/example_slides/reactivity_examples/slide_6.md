@@ -5,7 +5,7 @@
 class Components::SomeComponent < Matestack::Ui::Component
 
   def response
-    my_vue_js_component
+    Components::MyVueJsComponent.()
     toggle show_on: "some_event", hide_after: "3000" do
       span class: "message success" do
         plain "event triggered from custom vuejs component"
@@ -21,11 +21,11 @@ end
 ```ruby
 class Components::MyVueJsComponent < Matestack::Ui::VueJsComponent
 
-  vue_js_component_name "my-vue-js-component"
+  vue_name "my-vue-js-component"
 
   def response
     div class: "my-vue-js-component" do
-      button attributes: {"@click": "increaseValue"}
+      button "@click": "increaseValue"
       br
       plain "{{ dynamicValue }}!"
     end
@@ -37,7 +37,7 @@ end
 `app/matestack/components/my_vue_js_component.js`
 
 ```javascript
-MatestackUiCore.Vue.component('my-vue-js-component', {
+Vue.component('my-vue-js-component', {
   mixins: [MatestackUiCore.componentMixin],
   data: () => {
     return {
@@ -47,7 +47,7 @@ MatestackUiCore.Vue.component('my-vue-js-component', {
   methods: {
     increaseValue(){
       this.dynamicValue++
-      MatestackUiCore.matestackEventHub.$emit("some_event")
+      MatestackUiCore.eventHub.$emit("some_event")
     }
   }
 });

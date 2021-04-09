@@ -12,7 +12,7 @@ class MyAdmin::App < Matestack::Ui::Bootstrap::Apps::AdminTemplate
   def sidebar_top_partial
     div class: "text-center" do
       transition path: root_path, delay: 300 do
-        heading size: 4, text: "Your Rails Backend"
+        h4 "Your Rails Backend"
       end
     end
     div class: "text-center my-5" do

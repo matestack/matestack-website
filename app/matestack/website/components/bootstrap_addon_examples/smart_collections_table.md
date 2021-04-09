@@ -48,11 +48,9 @@ class MyAdmin::Pages::Orders::Index < Matestack::Ui::Page
   end
 
   def table_item_actions order
-    slot do
-      transition path: edit_dummy_order_path(order), delay: 300 do
-        bs_btn outline: true, size: :sm, variant: :primary do
-          bs_icon name: 'arrow-right', size: 20
-        end
+    transition path: edit_dummy_order_path(order), delay: 300 do
+      bs_btn outline: true, size: :sm, variant: :primary do
+        bs_icon name: 'arrow-right', size: 20
       end
     end
   end

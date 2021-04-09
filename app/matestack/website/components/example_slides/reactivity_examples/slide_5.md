@@ -5,14 +5,14 @@
 class Components::SomeComponent < Matestack::Ui::Component
 
   def response
-    form my_form_config do
+    matestack_form my_form_config do
       #...
     end
     #...
     ul do
       cable prepend_on: "new_element_created", id: "mocked-instance-list" do
         MyActiveRecordModel.last(5).each do |model|
-          li text: model
+          li model
         end
       end
     end
@@ -28,7 +28,7 @@ end
 # within your controller action handling the form input
 ActionCable.server.broadcast("matestack_ui_core", {
   event: "new_element_created",
-  data: matestack_component(:li, text: params[:some_attribute])
+  data: "<li>#{params[:some_attribute]}</li>")
 })
 
 ```
