@@ -9,10 +9,10 @@ class Website::Components::ExampleSlides::Base < Matestack::Ui::Component
         end
         div class: "col-xl-8" do
           div class: "row code-preview-container shadow-sm bg-white rounded" do
-            div class: "col-xl-7 code-wrapper pt-3" do
+            div class: "col-xl-8 code-wrapper pt-3" do
               code_section
             end
-            div class: "col-xl-5 pt-3 pb-5 preview-wrapper" do
+            div class: "col-xl-4 pt-3 pb-5 preview-wrapper" do
               strong text: "Preview:"
               br
               br
